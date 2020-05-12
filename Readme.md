@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Ololo Ololo](https://up.htmlacademy.ru/htmlcss/28/user/1351465).
-* Наставник: `Неизвестно`.
+* Студент: [Мария Банакова](https://up.htmlacademy.ru/htmlcss/28/user/1351465).
+* Наставник: [Михал Кислый] (https://htmlacademy.ru/profile/smart-grizzly)
 
 ---
 
