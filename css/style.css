@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    font-family: "Cuprum", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 115%;
+    color: #000000;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-top {
+    background-color: #293449;
+}
+
+.footer-top {
+    background-color: #32425C;
+}
+
+.footer-middle {
+    background-color: #32425C;
+}
+
+.footer-bottom {
+    background-color: #293449;
+}
