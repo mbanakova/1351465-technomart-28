@@ -17,34 +17,34 @@
 
         <div class="header-top">
           <div class="container">
-            <a href="index.html" class="logo"><img src="#" width="220" height="47" alt="Логотип Техномарта"></a>
+            <a href="index.html" class="logo">
+                <img src="#" width="220" height="47" alt="Логотип Техномарта">
+            </a>
             <form action="#" method="post">
               <input type="search" placeholder="Поиск:">
             </form>
-            <a href="#">Закладки</a>
-            <a href="#">Корзина</a>
-            <a href="#">Оформить заказ</a>
+            <a class="button" href="#">Закладки</a>
+            <a class="button" href="#">Корзина</a>
+            <a class="button" href="#">Оформить заказ</a>
           </div>
         </div>
         
         <div class="header-wrapper">
             <div class="header-middle container">
-            <div class="header-shop-description">
-                <p>
+            <p class="header-shop-description">
                 Интернет-магазин строительных материалов и инструментов для ремонта
-                </p>
-            </div>
+            </p>
 
             <div class="header-contacts">
-                <a href="tel:+78125552555">+7 (812) 555-25-55</a>
-                <p>
+                <a class="dial-up" href="tel:+78125552555">+7 (812) 555-25-55</a>
+                <p class="header-contacts-address">
                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                 </p>
             </div>
             
-            <div class="header-user-name">
-                <a href="#">Равшан Джамшутович</a>
-            </div>
+            <ul class="header-user-name">
+                <li class="header-user"><a href="#">Равшан Джамшутович</a></li>
+            </ul>
 
             <div class="header-user-profile">
                 <a href="#">Мои заказы</a>
@@ -74,7 +74,7 @@
             <a href="#">Инструмент</a>
             <a href="#">Перфораторы</a>
         </div>
-        <h2>Перфораторы</h2>
+        <h2 class="section-title">Перфораторы</h2>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр</h2>
             <h3>Фильтр:</h3>
@@ -168,31 +168,29 @@
         </div>
   
         <div class="footer-bottom">
-          <div class="container">
-            <div class="copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</div>
-  
-            <ul class="footer-social">
-              <li class="footer-social-item"><a href="#" title="Наш Вконтакте">Vk</a></li>
-              <li class="footer-social-item"><a href="#" title="Наш Фейсбук">Facebook</a></li>
-              <li class="footer-social-item"><a href="#" title="Наш Инстаграм">Instagram</a></li>
-            </ul>
-  
-            <div class="footer-feedback">
-                <dl>
-                  <dt>Обратная связь: </dt>
-                  <dd><a href="#">mail@htmlacademy.ru</a></dd>
-                </dl>
+            <div class="container">
+              <div class="copyright">
+                <span class="footer-bottom-text">&copy; 2010–2019 Компания «Техномарт»<br>Все права защищены</span>
+              </div>
+    
+              <ul class="footer-social">
+                <li class="footer-social-item"><a href="#" title="Наш Вконтакте">Vk</a></li>
+                <li class="footer-social-item"><a href="#" title="Наш Фейсбук">Facebook</a></li>
+                <li class="footer-social-item"><a href="#" title="Наш Инстаграм">Instagram</a></li>
+              </ul>
+    
+              <div class="footer-feedback">
+                  <span class="footer-bottom-text">Обратная связь: </span>
+                  <a href="#">mail@htmlacademy.ru</a>
               </div>
     
               <div class="developer">
-                <dl>
-                  <dt>Разработано — </dt>
-                  <dd><a href="https://htmlacademy.ru/intensive/htmlcss"></a>htmlacademy.ru</dd>
-                </dl>
+                <span class="footer-bottom-text">Разработано — </span>
+                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
               </div>
-          </div>
-        </div>  
-      </footer>
+            </div>
+        </div>
+    </footer>
 
   </body>
 </html>
