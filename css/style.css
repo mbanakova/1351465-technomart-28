@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
     min-width: 1200px;
@@ -29,6 +29,15 @@ body {
     background-color: #293449;
 }
 
+.header-wrapper {
+    background-color: #F3F7F9;
+
+}
+
+.main-header-nav {
+    background-color: #32425C;
+}
+
 .footer-top {
     background-color: #32425C;
 }
@@ -39,4 +48,4 @@ body {
 
 .footer-bottom {
     background-color: #293449;
-}
+} */
