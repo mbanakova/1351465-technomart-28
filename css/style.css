@@ -49,3 +49,36 @@
 .footer-bottom {
     background-color: #293449;
 } */
+
+
+
+
+
+
+/* Замена фото товара на кнопки, тест */
+
+.catalog-list-item .button {
+    display: none;
+}
+
+.catalog-list-item:hover a {
+    display: inline-block;
+}
+
+.catalog-list-item:hover img {
+    display: none;
+}
+
+/* Табы, тест */
+
+/* .tabs-content {
+    width: 330px;
+    height: 200px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.tab-content {
+    width: 330px;
+    height: 200px;
+} */
