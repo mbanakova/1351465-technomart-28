@@ -1,4 +1,4 @@
-/* body {
+body {
     margin: 0;
     padding: 0;
     min-width: 1200px;
@@ -9,15 +9,15 @@
     color: #000000;
 }
 
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
     padding: 0;
     border: 0;
     height: 1px;
-    width: 1px;
+    width: 1px;s
     overflow: hidden;
-  }
+  } */
 
 .container {
     width: 940px;
@@ -48,7 +48,7 @@
 
 .footer-bottom {
     background-color: #293449;
-} */
+}
 
 
 
