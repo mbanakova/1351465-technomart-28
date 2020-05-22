@@ -55,8 +55,8 @@ body {
 } */
 
 
-.picked {
-
+.old-price {
+    text-decoration: line-through;
 }
 
 /* Замена фото товара на кнопки, тест */
