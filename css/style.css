@@ -15,7 +15,7 @@ body {
     padding: 0;
     border: 0;
     height: 1px;
-    width: 1px;s
+    width: 1px;
     overflow: hidden;
   } */
 
@@ -25,7 +25,11 @@ body {
     padding: 0 15px;
 }
 
-.header-top {
+.logo {
+    background-color: #ee3643;
+}
+
+/* .header-top {
     background-color: #293449;
 }
 
@@ -48,23 +52,28 @@ body {
 
 .footer-bottom {
     background-color: #293449;
+} */
+
+
+.picked {
+
 }
-
-
-
-
-
 
 /* Замена фото товара на кнопки, тест */
 
-.catalog-list-item .button {
+.popular-item .buy,
+.popular-item .bookmark,
+.catalog-list-item .buy,
+.catalog-list-item .bookmark {
     display: none;
 }
 
-.catalog-list-item:hover a {
+.popular-item:hover button,
+.catalog-list-item:hover button {
     display: inline-block;
 }
 
+.popular-item:hover img,
 .catalog-list-item:hover img {
     display: none;
 }
@@ -81,4 +90,45 @@ body {
 .tab-content {
     width: 330px;
     height: 200px;
+}
+
+
+/* Ползунок фильтра цены */
+
+.filter-price-range {
+    position: relative;
+    width: auto;
+    height: 127px;
+}
+
+.range {
+    margin: 25px auto 20px 20px;
+    padding: 0;
+    width:180px;
+    height:2px;
+    border-radius: 4px;
+    background-color: #d7dcde;
+}
+
+.range-button-1, .range-button-2 {
+    position: absolute;
+    top: 35%;
+    width: 20px;
+    height: 20px;
+    cursor: move;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    background-image: url(img/filter-button.svg) no-repeat;
+    box-shadow: 0 2px #ababab;
+}
+
+.range-input-1, .range-input-2 {
+    margin: 10px auto;
+    width: 95px;
+    height: 38px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 18px;
+    border-radius: 4px;
 }

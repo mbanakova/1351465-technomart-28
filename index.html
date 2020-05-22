@@ -22,8 +22,8 @@
           <form action="#" method="post">
             <input type="search" placeholder="Поиск:">
           </form>
-          <a class="button" href="#">Закладки</a>
-          <a class="button" href="#">Корзина</a>
+          <a class="button" href="#">Закладки: <span class="bookmark-clicks">0</span></a>
+          <a class="button" href="#">Корзина: <span class="buy-clicks">0</span></a>
           <a class="button" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -63,7 +63,7 @@
     
     <!-- Основное -->
     <main>
-      <h1 class="visually-hidden">Техномарт. Интернет-магазин электроинструментов и стройматериалов.</h1>
+      <h1 class="visually-hidden container">Техномарт. Интернет-магазин электроинструментов и стройматериалов.</h1>
 
       <!-- Особенности -->
       <section class="features container">
@@ -111,7 +111,8 @@
             </li>
           </ul>
           <div class="slider-arrows">
-      <!-- Cюда добавлю стрелочки -->
+            <button type="button">Влево</button> 
+            <button type="button">Вправо</button> 
           </div>
         </div>
       </section>
@@ -123,6 +124,8 @@
 
         <ul class="popular-items-list">
           <li class="popular-item">
+            <button class="buy" href="#">Купить</button>
+            <button class="bookmark" href="#">В закладки</button>
             <img src="img/bosch-9000.png" width="184" height="164" alt="BOSCH BFG 9000">
             <h3 class="item-title">Перфоратор BOSCH BFG 9000</h3>
             <del class="old-price">32500 Р.</del>
@@ -130,6 +133,8 @@
           </li>
 
           <li class="popular-item">
+            <button class="buy" href="#">Купить</button>
+            <button class="bookmark" href="#">В закладки</button>
             <img src="img/bosch-3000-2000.png" width="127" height="112" alt="BOSCH BFG 3000">
             <h3 class="item-title">Перфоратор BOSCH BFG 3000</h3>
             <del class="old-price">22500 Р.</del>
@@ -137,6 +142,8 @@
           </li>
 
           <li class="popular-item">
+            <button class="buy" href="#">Купить</button>
+            <button class="bookmark" href="#">В закладки</button>
             <img src="img/bosch-6000.png" width="144" height="128" alt="BOSCH BFG 6000">
             <h3 class="item-title">Перфоратор BOSCH BFG 6000</h3>
             <del class="old-price">30500 Р.</del>
@@ -144,6 +151,8 @@
           </li>
 
           <li class="popular-item">
+            <button class="buy" href="#">Купить</button>
+            <button class="bookmark" href="#">В закладки</button>
             <img src="img/bosch-3000-2000.png" width="127" height="112" alt="BOSCH BFG 2000">
             <h3 class="item-title">Перфоратор BOSCH BFG 2000</h3>
             <del class="old-price"></del>
@@ -344,5 +353,42 @@
         </div>
       </div>
     </footer>
+
+    <!-- Поп-ап с картой-->
+    <section class="pop-up container">
+      <h2 class="section-title visually-hidden">Большая карта</h2>
+      <img src="img/map-large.png" width="970" height="477" alt="Большая карта местности">
+      <button type="button">Закрыть</button>
+    </section>
+
+    <!-- Поп-ап с формой -->
+    <section class="pop-up container">
+      <h2 class="section-title visually-hidden">Отправить нам письмо</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-input">
+          <p>
+            <label for="pop-user-name">Ваше имя:</label>
+            <input id="pop-user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
+          </p>
+
+          <p>
+            <label for="pop-user-email">Ваш e-mail:</label>
+            <input id="pop-user-email" type="email" name="user-email" placeholder="email@example.com" required>
+          </p>
+
+          <p>
+            <label for="pop-user-message">Текст письма:</label>
+            <textarea id="pop-user-message" name="user-message" placeholder="В свободной форме" required></textarea>
+          </p>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit">Оформить заказ</button>
+        </div>
+      </form>
+      <button type="button">Закрыть</button> 
+    </section>
+
+    <script src="js/bookmarks-buy-counter.js"></script>
   </body>
 </html>
