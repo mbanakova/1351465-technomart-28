@@ -21,7 +21,7 @@
     --special-greenlight: #8ed78f;
     --special-yellowlight: #ffd180;
     --special-buygreen: #367315;
-    --special-buyclick: #367315;
+    --special-buyclick: #518534;
     --success: #5fbb2d;
     --warning: #ffbf47;
     --error: #ba2732;
@@ -365,6 +365,24 @@ background-color: var(--basic-darknavy);
 
 .catalog-list-item:hover {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.new {
+    position: relative;
+    overflow: hidden;
+}
+
+.new::before {
+    position: absolute;
+    content: "new";
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--basic-red);
+    z-index: 50;
+    transform: rotate(45deg);
 }
 
 .buy {
