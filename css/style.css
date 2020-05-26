@@ -374,6 +374,8 @@ background-color: var(--basic-darknavy);
 
 .new::before {
     position: absolute;
+    top: 8px;
+    right: -25px;
     content: "new";
     font-size: 14px;
     line-height: 18px;
@@ -381,6 +383,7 @@ background-color: var(--basic-darknavy);
     text-transform: uppercase;
     color: var(--white);
     background-color: var(--basic-red);
+    padding: 7px 36px 5px 36px;
     z-index: 50;
     transform: rotate(45deg);
 }
