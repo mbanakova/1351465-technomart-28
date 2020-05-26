@@ -292,6 +292,7 @@ background-color: var(--basic-darknavy);
 /* Крошки  */
 
 .breadcrumbs {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -440,12 +441,14 @@ background-color: var(--basic-darknavy);
 }
 
 .item-title {
+    font-family: "PT Sans", "Arial", sans-serif;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
 }
 
 .old-price {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
@@ -457,6 +460,7 @@ background-color: var(--basic-darknavy);
 
 .item-price {
     position: relative;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
@@ -494,6 +498,7 @@ background-color: var(--basic-darknavy);
 }
 
 .technomart-text {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
 }
 
@@ -528,6 +533,7 @@ background-color: var(--basic-darknavy);
 }
 
 .contacts-text {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
 }
 
