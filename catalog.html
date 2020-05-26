@@ -5,9 +5,9 @@
     <meta name="keywords" content="электроинструмент, дрели, перфораторы, стройматериалы, товары для ремонта, техника, интернет-магазин">
     <meta name="description" content="Интернет-магазин электроинструмента, материалов для ремонта и строительства. Доставка по Санкт-Петербургу и в регионы.">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <link href="https://assets.htmlacademy.ru/content/skills/1/css/outline.css" rel="stylesheet"> -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>HTML Academy: Техномарт</title>
   </head>
 
@@ -17,15 +17,15 @@
 
         <div class="header-top">
           <div class="container">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="header-logo">
               <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">
             </a>
             <form action="#" method="post">
               <input type="search" placeholder="Поиск:">
             </form>
-            <a class="button" href="#">Закладки: <span class="bookmark-clicks">0</span></a>
-            <a class="button" href="#">Корзина: <span class="buy-clicks">0</span></a>
-            <a class="button" href="#">Оформить заказ</a>
+            <a class="button bookmarks" href="#">Закладки: <span class="bookmark-clicks">0</span></a>
+            <a class="button cart" href="#">Корзина: <span class="buy-clicks">0</span></a>
+            <a class="button make-order" href="#">Оформить заказ</a>
           </div>
         </div>
         
@@ -37,18 +37,19 @@
 
               <div class="header-contacts">
                 <a class="dial-up" href="tel:+78125552555">+7 (812) 555-25-55</a>
-                <p class="header-contacts-address">
+                <address class="header-contacts-address">
                   г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                </p>
+                </address>
               </div>
               
               <ul class="user-auth">
-                <li class="user-button"><a class="auth-link" href="#">Равшан Джамшутович</a></li>
-                <li class="user-button"><a class="auth-link" href="#">Выход</a></li>
+                <li class="user-button"><a class="auth-link guest" href="#">Равшан Джамшутович</a></li>
+                <li class="user-button"><a class="auth-link exit" href="#">Выход</a></li>
               </ul>
 
               <div class="header-user-profile">
                 <a class="user-profile" href="#">Мои заказы</a>
+                <span class="spot">&#128900;</span>
                 <a class="user-profile" href="#">Личный кабинет</a>
               </div>
             </div>
@@ -76,7 +77,7 @@
           <a class="area-title">Перфораторы</a>
         </div>
 
-        <h2 class="section-title">Перфораторы</h2>
+        <h2 class="section-title catalog-title">Перфораторы</h2>
 
         <section class="filters">
             <h2 class="visually-hidden">Фильтр</h2>
@@ -137,7 +138,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button class="show-items" type="submit">Показать</button>
             </form>
         </section>    
 
@@ -171,8 +172,8 @@
                 <button class="bookmark">В закладки</button>
                 <img src="img/bosch-6000.png" width="144" height="128" alt="BOSCH BFG 6000">
                 <h3 class="item-title">Перфоратор BOSCH BFG 6000</h3>
-                <span class="old-price">30500</span>
-                <a class="item-price" href="#">25500</a>
+                <span class="old-price">30500 р.</span>
+                <a class="item-price" href="#">25500 р.</a>
               </li>
 
               <li class="catalog-list-item">
@@ -180,8 +181,8 @@
                 <button class="bookmark">В закладки</button>
                 <img src="img/bosch-6000.png" width="144" height="128" alt="BOSCH BFG 6000">
                 <h3 class="item-title">Перфоратор BOSCH BFG 6000</h3>
-                <span class="old-price">30500</span>
-                <a class="item-price" href="#">25500</a>
+                <span class="old-price">30500 р.</span>
+                <a class="item-price" href="#">25500 р.</a>
               </li>
 
               <li class="catalog-list-item">
@@ -189,8 +190,8 @@
                 <button class="bookmark">В закладки</button>
                 <img src="img/bosch-6000.png" width="144" height="128" alt="BOSCH BFG 6000">
                 <h3 class="item-title">Перфоратор BOSCH BFG 6000</h3>
-                <span class="old-price">30500</span>
-                <a class="item-price" href="#">25500</a>
+                <span class="old-price">30500 р.</span>
+                <a class="item-price" href="#">25500 р.</a>
               </li>
 
               <li class="catalog-list-item">
@@ -198,8 +199,8 @@
                 <button class="bookmark">В закладки</button>
                 <img src="img/bosch-3000-2000.png" width="127" height="112" alt="BOSCH BFG 3000">
                 <h3 class="item-title">Перфоратор BOSCH BFG 3000</h3>
-                <span class="old-price">22500</span>
-                <a class="item-price" href="#">15500</a>
+                <span class="old-price">22500 р.</span>
+                <a class="item-price" href="#">15500 р.</a>
               </li>
 
               <li class="catalog-list-item">
@@ -207,8 +208,8 @@
                 <button class="bookmark">В закладки</button>
                 <img src="img/bosch-6000.png" width="144" height="128" alt="BOSCH BFG 6000">
                 <h3 class="item-title">Перфоратор BOSCH BFG 6000</h3>
-                <span class="old-price">30500</span>
-                <a class="item-price" href="#">25500</a>
+                <span class="old-price">30500 р.</span>
+                <a class="item-price" href="#">25500 р.</a>
               </li>
 
               <li class="catalog-list-item">
@@ -217,7 +218,7 @@
                 <img src="img/bosch-3000-2000.png" width="127" height="112" alt="BOSCH BFG 2000">
                 <h3 class="item-title">Перфоратор BOSCH BFG 2000</h3>
                 <span class="old-price"></span>
-                <a class="item-price" href="#">12500</a>
+                <a class="item-price" href="#">12500 р.</a>
               </li>
 
               <li class="catalog-list-item">
@@ -225,8 +226,8 @@
                 <button class="bookmark">В закладки</button>
                 <img src="img/bosch-3000-2000.png" width="127" height="112" alt="BOSCH BFG 3000">
                 <h3 class="item-title">Перфоратор BOSCH BFG 3000</h3>
-                <span class="old-price">22500</span>
-                <a class="item-price" href="#">15500</a>
+                <span class="old-price">22500 р.</span>
+                <a class="item-price" href="#">15500 р.</a>
               </li>
 
               <li class="catalog-list-item">
@@ -234,8 +235,8 @@
                 <button class="bookmark">В закладки</button>
                 <img src="img/bosch-6000.png" width="144" height="128" alt="BOSCH BFG 6000">
                 <h3 class="item-title">Перфоратор BOSCH BFG 6000</h3>
-                <span class="old-price">30500</span>
-                <a class="item-price" href="#">25500</a>
+                <span class="old-price">30500 р.</span>
+                <a class="item-price" href="#">25500 р.</a>
               </li>
 
               <li class="catalog-list-item">
@@ -244,7 +245,7 @@
                 <img src="img/bosch-3000-2000.png" width="127" height="112" alt="BOSCH BFG 2000">
                 <h3 class="item-title">Перфоратор BOSCH BFG 2000</h3>
                 <span class="old-price"></span>
-                <a class="item-price" href="#">12500</a>
+                <a class="item-price" href="#">12500 р.</a>
               </li>
             </ul>
 
@@ -274,7 +275,9 @@
 
         <div class="footer-top">
           <div class="container">
-            <a  href="index.html" class="logo"><img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта"></a>
+            <a  href="index.html" class="footer-logo">
+              <img src="img/logo-footer.svg" width="137" height="22" alt="Логотип Техномарта">
+            </a>
   
             <ul class="footer-navigation">
               <li class="footer-navigation-item"><a href="#">Компания</a></li>
@@ -288,11 +291,11 @@
   
         <div class="footer-middle">
           <div class="container">
-            <p class="footer-contacts">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-              +7 (812) 555-05-55
-            </p>
-  
+            <address class="footer-contacts">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
+            </address>
+            <a class="footer-phone" href="tel:+78125552555">+7 (812) 555-05-55</a>
+    
             <ul class="footer-catalog">
               <li class="footer-catalog-item"><a href="#">Материалы</a></li>
               <li class="footer-catalog-item"><a href="#">Техника</a></li>
@@ -311,9 +314,9 @@
               </div>
     
               <ul class="footer-social">
-                <li class="footer-social-item"><a href="#" aria-label="Наш Вконтакте">Vk</a></li>
-                <li class="footer-social-item"><a href="#" aria-label="Наш Фейсбук">Facebook</a></li>
-                <li class="footer-social-item"><a href="#" aria-label="Наш Инстаграм">Instagram</a></li>
+                <li class="footer-social-item"><a  class="social-button vk" href="#" aria-label="Наш Вконтакте">Vk</a></li>
+                <li class="footer-social-item"><a  class="social-button facebook" href="#" aria-label="Наш Фейсбук">Facebook</a></li>
+                <li class="footer-social-item"><a  class="social-button instagram" href="#" aria-label="Наш Инстаграм">Instagram</a></li>
               </ul>
     
               <div class="footer-feedback">
