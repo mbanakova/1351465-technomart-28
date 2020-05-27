@@ -478,13 +478,29 @@ background-color: var(--basic-darknavy);
 }
 
 .tabs-item {
+    width: 240px;
+    height: 61px;
     background-color: var(--special-darkblue);
     box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+    box-sizing: border-box;
+}
+
+.tabs-item:hover {
+    background-color: var(--basic-darknavy);
+    box-shadow: 0px 1px 0px var(--basic-darknavy), inset 0px 1px 0px #405069;
+}
+.tabs-item:hover .tab{
+    color: var(--white);
 }
 
 .active {
     background-color: var(--white);
     box-shadow: 0px 1px 0px var(--white);
+}
+.active:hover {
+    color: var(--white);
+    background-color: var(--basic-darknavy);
+    box-shadow: 0px 1px 0px var(--basic-darknavy), inset 0px 1px 0px #405069;
 }
 
 .tab {
@@ -500,8 +516,7 @@ background-color: var(--basic-darknavy);
 .tabs-content {
     margin: 0;
     padding: 0;
-    width: 330px;
-    height: 200px;
+    height: 230px;
     overflow: hidden;
     list-style: none;
 }
@@ -605,21 +620,20 @@ background-color: var(--basic-darknavy);
     text-transform: uppercase;
 }
 
+.filter-input:checked {
+    opacity: 0.4;
+}
+
+.filter-input:checked + .filter-label {
+    opacity: 0.4;
+}
+
 /* Ползунок фильтра цены */
 
 .filter-price-range {
     position: relative;
     width: auto;
     height: 127px;
-}
-
-.range {
-    margin: 25px auto 20px 20px;
-    padding: 39px 20px;
-    width:180px;
-    height:2px;
-    border-radius: 4px;
-    background-color: #d7dcde;
 }
 
 .range-button-1,
@@ -647,6 +661,15 @@ background-color: var(--basic-darknavy);
     font-size: 17px;
     line-height: 18px;
     text-align: center;
+}
+
+.range {
+    margin: 25px auto 20px 20px;
+    padding: 0;
+    width:180px;
+    height:2px;
+    border-radius: 4px;
+    background-color: #d7dcde;
 }
 
 .show-items {
@@ -702,17 +725,26 @@ background-color: var(--basic-darknavy);
     padding-right: 20px;
 }
 
-.sort-item:first-of-type .sort-item-link {
-    color: var(--basic-red);
-}
-
-.sort-item:nth-of-type(2) .sort-item-link,
-.sort-item:nth-of-type(3) .sort-item-link {
+.sort-item-link.rank {
     color: var(--black);
     opacity: 0.3;
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: var(--basic-red);
+}
+
+.sort-item-link.rank:hover {
+    opacity: 1;
+    color: var(--black);
+    text-decoration: underline;
+    text-decoration-style: line;
+    text-decoration-color: var(--basic-red);
+}
+
+.sort-item-link.rank:active {
+    opacity: 1;
+    color: var(--basic-red);
+    text-decoration: none;
 }
 
 .sort-item-link.up {
@@ -730,12 +762,6 @@ background-color: var(--basic-darknavy);
     font-size: 0;
     padding: 10px;
 }
-
-
-
-
-
-
 
 /* Карточки товаров  */
 
@@ -870,9 +896,6 @@ background-color: var(--basic-darknavy);
     transform: rotate(-45deg) scale(0.73);
 }
 
-
-
-
 /* Компания Техномарт */
 
 .technomart .section-title {
@@ -943,10 +966,6 @@ background-color: var(--basic-darknavy);
 
 /* Нумерация страниц каталога */
 
-.pagination {
-
-}
-
 .page {
     display: inline-block;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -979,11 +998,6 @@ background-color: var(--basic-darknavy);
     color: var(--white);
 }
 
-
-
-
-
-
 /* Пара слов о перфораторах */
 
 .specification {
@@ -1000,7 +1014,6 @@ background-color: var(--basic-darknavy);
 }
 
 /* Футер */
-
 
 .footer-top {
     background-color: var(--special-darkblue);
@@ -1140,23 +1153,9 @@ background-color: var(--basic-darknavy);
 
 
 
-
-
-
-
-
-
-
 .pop-up {
     display: none;
 }
-
-
-
-
-
-
-
 
 /* Замена фото товара на кнопки, тест */
 
@@ -1178,42 +1177,4 @@ background-color: var(--basic-darknavy);
 }
 
 
-/* Ползунок фильтра цены */
 
-.filter-price-range {
-    position: relative;
-    width: auto;
-    height: 127px;
-}
-
-.range {
-    margin: 25px auto 20px 20px;
-    padding: 0;
-    width:180px;
-    height:2px;
-    border-radius: 4px;
-    background-color: #d7dcde;
-}
-
-.range-button-1, .range-button-2 {
-    position: absolute;
-    top: 40%;
-    width: 20px;
-    height: 20px;
-    cursor: move;
-    transform: translateY(-50%);
-    border: none;
-    border-radius: 50%;
-    background-image: url(img/filter-button.svg) no-repeat;
-    box-shadow: 0 2px #ababab;
-}
-
-.range-input-1, .range-input-2 {
-    margin: 10px auto;
-    width: 95px;
-    height: 38px;
-    text-align: center;
-    font-size: 17px;
-    line-height: 18px;
-    border-radius: 4px;
-}
