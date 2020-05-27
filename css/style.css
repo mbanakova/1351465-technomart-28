@@ -153,10 +153,6 @@ a {
     background-color: var(--basic-background);
 }
 
-.header-middle {
-
-}
-
 .header-shop-description {
     color: var(--basic-red);
     font-style: italic;
@@ -298,10 +294,6 @@ background-color: var(--basic-darknavy);
     list-style: none;
 }
 
-.feature-item {
-
-}
-
 .feature-title {
     font-size: 24px;
     line-height: 30px;
@@ -389,10 +381,6 @@ background-color: var(--basic-darknavy);
 .feature-slider-title {
     font-size: 36px;
     line-height: 36px;
-}
-
-.feature-slider-text {
-
 }
 
 .feature-slider .button {
@@ -646,7 +634,7 @@ background-color: var(--basic-darknavy);
     transform: translateY(-50%);
     border: none;
     border-radius: 50%;
-    background-image: url(img/filter-button.svg) no-repeat;
+    background-image: url("../img/filter-button.svg") no-repeat;
     box-shadow: 0 2px #ababab;
 }
 
@@ -970,13 +958,13 @@ background-color: var(--basic-darknavy);
     display: inline-block;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
-    line-height: 18px;
-    height:38px;
+    line-height: 38px;
+    height: 38px;
+    min-width: 38px;
     text-align: center;
     vertical-align: middle;
     color: var(--black);
-    min-width: 8px;
-    padding: 7px 15px 0 15px;
+    padding: 0 15px;
     background-color: var(--white);
     border: 1px solid var(--special-filter);
     border-radius: 2px;
@@ -1169,12 +1157,10 @@ background-color: var(--basic-darknavy);
 .popular-item:hover button,
 .catalog-list-item:hover button {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .popular-item:hover img,
 .catalog-list-item:hover img {
     display: none;
 }
-
-
-
