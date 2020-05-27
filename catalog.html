@@ -86,12 +86,14 @@
                 <fieldset class="filter-price-range">
                   <legend class="filter-legend">Цена:</legend>
 
-                  <div class="range" id="range-box">
-                    <div class="range-between" id="range-ruler"></div>
-                    <button class="range-button-1" id="range-left-button"></button>
-                    <button class="range-button-2" id="range-right-button"></button>
+                  <div class="range-wrapper">
+                    <div class="range" id="range-box">
+                      <div class="range-between" id="range-ruler"></div>
+                      <button class="range-button-1" id="range-left-button"></button>
+                      <button class="range-button-2" id="range-right-button"></button>
+                    </div>
                   </div>
-                  
+
                   <div class="range-cells">
                     <input class="range-input-1" type="number" min="0" max="30000" id="range-left-cell">
                     <span class="dash">—</span>
@@ -158,10 +160,10 @@
                   <a class="sort-item-link" href="#">По функционалу</a>
                 </li>
                 <li class="sort-item">
-                  <a class="sort-item-link" href="#">Вверх</a>
+                  <a class="sort-item-link up" href="#">Вверх</a>
                 </li>
                 <li class="sort-item">
-                  <a class="sort-item-link" href="#">Вниз</a>
+                  <a class="sort-item-link down" href="#">Вниз</a>
                 </li>
               </ul>
             </div>
@@ -250,10 +252,10 @@
             </ul>
 
             <div class="pagination">
-              <a href="#">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">Следующая</a>
+              <a class="page current" href="#">1</a>
+              <a class="page" href="#">2</a>
+              <a class="page" href="#">3</a>
+              <a class="page" href="#">Следующая</a>
             </div>
         </section> 
 
@@ -332,9 +334,9 @@
               </div>
     
               <ul class="footer-social">
-                <li class="footer-social-item"><a  class="social-button vk" href="#" aria-label="Наш Вконтакте">Vk</a></li>
-                <li class="footer-social-item"><a  class="social-button facebook" href="#" aria-label="Наш Фейсбук">Facebook</a></li>
-                <li class="footer-social-item"><a  class="social-button instagram" href="#" aria-label="Наш Инстаграм">Instagram</a></li>
+                <li class="footer-social-item"><a class="social-button vk" href="#" aria-label="Наш Вконтакте">Vk</a></li>
+                <li class="footer-social-item"><a class="social-button facebook" href="#" aria-label="Наш Фейсбук">Facebook</a></li>
+                <li class="footer-social-item"><a class="social-button instagram" href="#" aria-label="Наш Инстаграм">Instagram</a></li>
               </ul>
     
               <div class="footer-feedback">

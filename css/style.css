@@ -26,6 +26,7 @@
     --warning: #ffbf47;
     --error: #ba2732;
     --light-grey: #eaeaea;
+    --filter-beige: #f7f3ec;
 }
 
 body {
@@ -289,6 +290,257 @@ background-color: var(--basic-darknavy);
     color: var(--white);
 }
 
+/* Особенности */
+
+.feature-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-item {
+
+}
+
+.feature-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.feature-item .button {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 135px;
+    height: 38px;
+}
+
+.feature-item .button:hover {
+    background-color: var(--basic-greylight);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+.feature-item .button:active {
+    background-color: var(--special-oldprice);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+.materials {
+    background-color: var(--special-yellow);
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+}
+
+.tools {
+    background-color: var(--special-blue);  
+    background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;  
+}
+
+.technics {
+    background-color: var(--special-lilac);  
+    background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+
+}
+
+.discounts {
+    background-color: var(--special-greenlight);    
+    background-image: url(../img/icon-4.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+}
+
+.delivery {
+    background-color: #ffc047;    
+    background-image: url(../img/icon-5.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+}
+
+/* Слайдер */
+
+.feature-slider {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--white);
+}
+
+.feature-slider-hammerdrill {
+    background-image: url(../img/slider-hammer-drill.jpg);
+}
+
+.feature-slider-drill {
+    background-image: url(../img/slider-drill.jpg);
+}
+
+.feature-slider-title {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.feature-slider-text {
+
+}
+
+.feature-slider .button {
+    background-color: var(--basic-red);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 11px 46px 9px 46px;
+}
+
+/* Популярные товары */
+
+.popular-items .title-wrapper {
+    background-color: var(--basic-beige);
+}
+
+.popular-items .button {
+    background-color: var(--basic-red);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 11px 24px 9px 24px;
+}
+
+/* Популярные производители */
+
+.popular-brands .title-wrapper {
+    background-color: var(--basic-beige);
+}
+
+.popular-brands-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.popular-brand {
+    border: 1px solid #eaeaea;
+}
+
+.popular-brand:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.popular-brand:active {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0.5;
+}
+
+.popular-brands .button {
+    background-color: var(--basic-red);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 11px 39px 9px 39px;
+}
+
+/* Сервисы */
+
+.service {
+    background-color: var(--basic-background);
+}
+
+.service .section-title {
+    color: var(--black);
+}
+
+.service .service-text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+}
+
+.tabs-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs-item {
+    background-color: var(--special-darkblue);
+    box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.active {
+    background-color: var(--white);
+    box-shadow: 0px 1px 0px var(--white);
+}
+
+.tab {
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--white);
+}
+
+.active .tab {
+    color: var(--special-darkblue);
+}
+
+.tabs-content {
+    margin: 0;
+    padding: 0;
+    width: 330px;
+    height: 200px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.tab-content {
+    width: 330px;
+    height: 200px;
+}
+
+.tab-content:first-child {
+    background-image: url(../img/delivery.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.tab-content:nth-child(2) {
+    background-image: url(../img/warranty.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.tab-content:last-child {
+    background-image: url(../img/credit.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.tab-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--special-darkblue);
+}
+
+.tab-text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+}
+
+
 /* Крошки  */
 
 .breadcrumbs {
@@ -323,6 +575,16 @@ background-color: var(--basic-darknavy);
 
 /* Каталог, фильтры */
 
+.filter-price-range,
+.filter-brands {
+    border: none;
+    border-bottom: 1px solid var(--special-filter);
+}
+
+.filter-power {
+    border: none;
+}
+
 .filter-legend {
     font-size: 17px;
     line-height: 30px;
@@ -343,6 +605,50 @@ background-color: var(--basic-darknavy);
     text-transform: uppercase;
 }
 
+/* Ползунок фильтра цены */
+
+.filter-price-range {
+    position: relative;
+    width: auto;
+    height: 127px;
+}
+
+.range {
+    margin: 25px auto 20px 20px;
+    padding: 39px 20px;
+    width:180px;
+    height:2px;
+    border-radius: 4px;
+    background-color: #d7dcde;
+}
+
+.range-button-1,
+.range-button-2 {
+    position: absolute;
+    top: 40%;
+    width: 20px;
+    height: 20px;
+    cursor: move;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    background-image: url(img/filter-button.svg) no-repeat;
+    box-shadow: 0 2px #ababab;
+}
+
+.range-input-1,
+.range-input-2 {
+    margin: 10px auto;
+    width: 95px;
+    height: 38px;
+    background-color: var(--filter-beige);
+    border: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+}
+
 .show-items {
     font-family: "PT Sans", sans-serif;
     font-size: 13px;
@@ -354,6 +660,82 @@ background-color: var(--basic-darknavy);
     border: 1px solid var(--special-filter);
     box-sizing: border-box;
 }
+
+.show-items:hover {
+    border: 1px solid var(--basic-red);
+}
+
+.show-items:active {
+    color: var(--white);
+    background-color: var(--basic-red);
+}
+
+/* Сортировка товаров в каталоге */
+
+.sort-items-bar {
+    display: flex;
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.sort-items-bar .area-title {
+    margin: 0;
+    padding: 0 20px 0 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.sort-items-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.sort-item-link {
+    padding-right: 20px;
+}
+
+.sort-item:first-of-type .sort-item-link {
+    color: var(--basic-red);
+}
+
+.sort-item:nth-of-type(2) .sort-item-link,
+.sort-item:nth-of-type(3) .sort-item-link {
+    color: var(--black);
+    opacity: 0.3;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--basic-red);
+}
+
+.sort-item-link.up {
+    background-image: url("../img/icon-up-dir.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: 0;
+    padding: 10px;
+}
+
+.sort-item-link.down {
+    background-image: url("../img/icon-down-dir.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: 0;
+    padding: 10px;
+}
+
+
+
+
+
+
 
 /* Карточки товаров  */
 
@@ -479,10 +861,10 @@ background-color: var(--basic-darknavy);
     content: "";
     z-index: 1;
     background-color: var(--basic-red);
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     top: 2px;
-    right: -17px;
+    right: -18px;
     box-shadow: 1px 1px 0 1px var(--basic-red);
     border-radius: 50px 0 0 0;
     transform: rotate(-45deg) scale(0.73);
@@ -509,7 +891,15 @@ background-color: var(--basic-darknavy);
 }
 
 .technomart-list-item {
+    position: relative;
+    padding-left: 37px;
+}
 
+.technomart-list-item::before {
+    position: absolute;
+    content: url("../img/red-stroke.png");
+    top: -4px;
+    Left: 0;
 }
 
 .technomart .button {
@@ -549,6 +939,64 @@ background-color: var(--basic-darknavy);
 
 .contacts .button:active {
     background-color: var(--error);
+}
+
+/* Нумерация страниц каталога */
+
+.pagination {
+
+}
+
+.page {
+    display: inline-block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    height:38px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--black);
+    min-width: 8px;
+    padding: 7px 15px 0 15px;
+    background-color: var(--white);
+    border: 1px solid var(--special-filter);
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.page:hover {
+    border: 1px solid var(--basic-greylight);
+}
+
+.page:active {
+    border: 1px solid var(--basic-red);
+}
+
+.current {
+    background-color: var(--basic-red);
+    border: 1px solid var(--basic-red);
+    box-sizing: border-box;
+    color: var(--white);
+}
+
+
+
+
+
+
+/* Пара слов о перфораторах */
+
+.specification {
+    background-color: var(--basic-background);
+}
+
+.specification .section-title {
+    color: var(--black);
+}
+
+.specification-text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
 }
 
 /* Футер */
@@ -727,20 +1175,6 @@ background-color: var(--basic-darknavy);
 .popular-item:hover img,
 .catalog-list-item:hover img {
     display: none;
-}
-
-/* Табы, тест */
-
-.tabs-content {
-    width: 330px;
-    height: 200px;
-    overflow: hidden;
-    list-style: none;
-}
-
-.tab-content {
-    width: 330px;
-    height: 200px;
 }
 
 
