@@ -955,16 +955,13 @@ background-color: var(--basic-darknavy);
 /* Нумерация страниц каталога */
 
 .page {
-    display: inline-block;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 38px;
-    height: 38px;
     min-width: 38px;
     text-align: center;
-    vertical-align: middle;
     color: var(--black);
-    padding: 0 15px;
+    padding: 11px 15px;
     background-color: var(--white);
     border: 1px solid var(--special-filter);
     border-radius: 2px;
