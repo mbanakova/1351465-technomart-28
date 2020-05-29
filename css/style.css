@@ -173,8 +173,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    outline: 3px solid rgba(102, 255, 0, 0.836);
-    outline-offset: -3px;
     box-sizing: border-box;
 }
 
@@ -187,51 +185,44 @@ a {
     color: var(--basic-red);
     font-style: italic;
     font-size: 16px;
-    outline: 3px solid rgba(255, 1, 1, 0.836);
-    outline-offset: -3px;
 }
 
 .header-contacts {
-    margin-top: auto;
-    border-top: 1px solid #000;
-    outline: 3px solid rgba(255, 1, 1, 0.836);
-    outline-offset: -3px;
+    margin-left: 50px;
+    margin-top: 3px;
+    width: 270px;
 }
 
 .dial-up {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     margin-top: auto;
-    width: 150px;
+    width: 190px;
     font-size: 21px;
     line-height: 30px;
     font-weight: 700;
     color: var(--basic-red);
     border: 3px solid var(--white);
-    padding: 7px 15px 5px 70px;
+    padding: 7px 0 5px 70px;
     background-image: url("../img/icon-phone.svg");
-    background-position: 10% 50%;
+    background-position: 15% 50%;
     background-repeat: no-repeat;
-    outline: 3px solid rgba(234, 3, 255, 0.836);
-    outline-offset: -3px;
 }
 
 .header-contacts-address {
-    margin-top: 3px;
-    padding: 0 10px;
+    padding: 0;
+    margin-top: 5px;
+    width: 270px;
     font-size: 14px;
+    line-height: 14px;
     text-align: center;
     color: var(--special-darkblue);
     font-style: normal;
-    outline: 3px solid rgba(234, 3, 255, 0.836);
-    outline-offset: -3px;
 }
 
 .login-wrapper {
+    margin-top: 4px;
     display: flex;
     flex-direction: column;
-    outline: 3px solid rgba(255, 1, 1, 0.836);
-    outline-offset: -3px;
     justify-content: space-between;
 }
 
@@ -240,8 +231,6 @@ a {
     padding: 0;
     width: 300px;
     list-style: none;
-    outline: 3px solid rgba(234, 3, 255, 0.836);
-    outline-offset: -3px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -249,22 +238,20 @@ a {
 
 .user-button {
     background-color: var(--white);
-    margin-right: 10px;
 }
 
 .user-button:last-child {
-    margin: 0;
+    align-self: center;
+    margin-right: 0;
 }
 
 .auth-link {
     display: block;
     font-size: 21px;
-    line-height: 21px;
+    line-height: 45px;
+    min-height: 45px;
     text-align: center;
     color: var(--black);
-    min-height: 45px;
-    outline: 3px solid rgba(234, 3, 255, 0.836);
-    outline-offset: -3px;
 }
 
 .auth-link.enter {
@@ -295,38 +282,48 @@ a {
 }
 
 .auth-link.guest {
-    padding-left: 50px;
-    padding-right: 10px;
-    min-width: 185px;
-    background-image: url("../img/icon-user.svg");
-    background-position: 7% 50%;
-    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-right: 0px;
+    min-width: 200px;
+    border-top: 1px solid var(--basic-background);
+    max-height: 44px;
 }
 
-.user-button + .guest {
-    margin-right: 0;
+.guest:hover .ravshan {
+    fill: var(--basic-navy)
+}
+
+.exit:hover .log-out {
+    fill: var(--basic-navy)
 }
 
 .auth-link.guest:active {
     color: var(--basic-greylight);
 }
 
+.ravshan {
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+.log-out {
+
+}
+
 .auth-link.exit {
     font-size: 0;
     margin: 0;
-    padding: 0 17px 0 20px;
-    background-image: url("../img/icon-logout.svg");
-    background-position: 10% 50%;
-    background-repeat: no-repeat;
+    padding: 0 18px;
+    align-self: center;
 }
 
 .header-user-profile {
-    outline: 3px solid rgba(234, 3, 255, 0.836);
-    margin: 0 auto;
+    margin: 5px auto 0 auto;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .user-profile {
-    font-size: 16px;
     color: var(--special-darkblue);
 }
 
@@ -398,16 +395,24 @@ a {
     color: var(--white);
 }
 
+.feature-item {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .feature-item .button {
     margin: 0;
     padding: 0;
+    vertical-align: middle;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 38px;
     text-align: center;
     color: var(--white);
     background-color: rgba(255, 255, 255, 0.3);
     width: 135px;
-    height: 38px;
 }
 
 .feature-item .button:hover {
@@ -426,21 +431,21 @@ a {
     background-color: var(--special-yellow);
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
-    background-position: 70% 50%;
+    background-position: 200px 50%;
 }
 
 .tools {
     background-color: var(--special-blue);  
     background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
-    background-position: 70% 50%;  
+    background-position: 200px 50%;  
 }
 
 .technics {
     background-color: var(--special-lilac);  
     background-image: url(../img/icon-3.svg);
     background-repeat: no-repeat;
-    background-position: 70% 50%;
+    background-position: 200px 50%;
 
 }
 
@@ -448,7 +453,7 @@ a {
     background-color: var(--special-greenlight);    
     background-image: url(../img/icon-4.svg);
     background-repeat: no-repeat;
-    background-position: 70% 50%;
+    background-position: 200px 50%;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: -1;
@@ -459,7 +464,7 @@ a {
     background-color: #ffc047;    
     background-image: url(../img/icon-5.svg);
     background-repeat: no-repeat;
-    background-position: 70% 50%;
+    background-position: 200px 50%;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: -1;
@@ -1096,30 +1101,26 @@ a {
     position: relative;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
-    line-height: 18px;
+    line-height: 17px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
     background-color: var(--basic-red);
-    width: 122px;
-    padding: 10px;
+    width: 120px;
+    padding: 10px 10px 11px 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* Наверно лучше картинкой, стрелка какая-то драная */
 .item-price:after {
     position: absolute;
     content: "";
-    z-index: 1;
-    background-color: var(--basic-red);
-    width: 34px;
-    height: 34px;
-    top: 2px;
-    right: -15px;
-    box-shadow: 1px 1px 0 1px var(--basic-red);
-    border-radius: 50px 0 0 0;
-    transform: rotate(-45deg) scale(0.73);
+    width: 0;
+    height: 0;
+    top: 0;
+    right: -19px;
+    border: 19px solid var(--white);
+    border-left-color: var(--basic-red);
 }
 
 /* Компания Техномарт */
