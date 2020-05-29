@@ -224,6 +224,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-top: 1px solid var(--basic-background);
 }
 
 .user-auth {
@@ -238,6 +239,7 @@ a {
 
 .user-button {
     background-color: var(--white);
+    max-height: 42px;
 }
 
 .user-button:last-child {
@@ -254,11 +256,16 @@ a {
     color: var(--black);
 }
 
+.button-gap {
+    margin-right: 10px;
+}
+
 .auth-link.enter {
-    padding: 11px 20px 12px 45px;
-    background-image: url("../img/icon-login.svg");
-    background-position: 10% 50%;
-    background-repeat: no-repeat;
+    padding: 0 20px 0 25px;
+}
+
+.enter .check-in {
+    padding-right: 15px;
 }
 
 .auth-link.enter:hover {
@@ -269,8 +276,13 @@ a {
     color: var(--basic-greylight);
 }
 
+.auth-link.enter:hover .log-in {
+    fill: var(--basic-navy)
+}
+
+
 .auth-link.register {
-    padding: 12px 24px;
+    padding: 0 24px;
 }
 
 .auth-link.register:hover {
@@ -282,10 +294,9 @@ a {
 }
 
 .auth-link.guest {
-    padding-left: 10px;
-    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
     min-width: 200px;
-    border-top: 1px solid var(--basic-background);
     max-height: 44px;
 }
 
@@ -306,13 +317,9 @@ a {
     padding-left: 5px;
 }
 
-.log-out {
-
-}
-
 .auth-link.exit {
     font-size: 0;
-    margin: 0;
+    margin-top: 8px;
     padding: 0 18px;
     align-self: center;
 }
