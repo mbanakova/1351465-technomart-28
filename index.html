@@ -23,9 +23,12 @@
           <form action="#" method="post">
             <input class="header-search" type="search" placeholder="Поиск:">
           </form>
-          <a class="button bookmarks" href="#">Закладки: <span class="bookmark-clicks">0</span></a>
-          <a class="button cart" href="#">Корзина: <span class="buy-clicks">0</span></a>
-          <a class="button make-order" href="#">Оформить заказ</a>
+
+          <div class="header-links-wrap">
+            <a class="button bookmarks" href="#">Закладки: <span class="bookmark-clicks">0</span></a>
+            <a class="button cart" href="#">Корзина: <span class="buy-clicks">0</span></a>
+            <a class="button make-order" href="#">Оформить заказ</a>
+          </div>
         </div>
       </div>
 
@@ -42,10 +45,12 @@
               </address>
           </div>
 
-          <ul class="user-auth">
-            <li class="user-button"><a class="auth-link enter" href="#">Войти</a></li>
-            <li class="user-button"><a class="auth-link register" href="#">Регистрация</a></li>
-          </ul>
+          <div class="login-wrapper">
+            <ul class="user-auth">
+              <li class="user-button"><a class="auth-link enter" href="#">Войти</a></li>
+              <li class="user-button"><a class="auth-link register" href="#">Регистрация</a></li>
+            </ul>
+        </div>
         </div>
 
         <nav class="main-header-nav container">
@@ -169,7 +174,7 @@
       <section class="popular-brands container">
         <div class="title-wrapper">
           <h2 class="section-title">Популярные производители:</h2>
-          <a class="button" href="#">Открыть каталог</a>
+          <a class="button" href="#">Все производители</a>
         </div>
 
         <ul class="popular-brands-list">
@@ -272,7 +277,7 @@
         </div>
       </section>
 
-      <div class="container">
+      <div class="techno-contacts container">
       <!-- Компания Техномарт -->
         <section class="technomart">
           <h2 class="section-title">Компания "Техномарт"</h2>
@@ -330,10 +335,12 @@
 
       <div class="footer-middle">
         <div class="container">
-          <address class="footer-contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
-          </address>
-          <a class="footer-phone" href="tel:+78125552555">+7 (812) 555-05-55</a>
+          <div class="footer-address-wrap">
+            <address class="footer-contacts">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
+            </address>
+            <a class="footer-phone" href="tel:+78125552555">+7 (812) 555-05-55</a>
+          </div>
 
           <ul class="footer-catalog">
             <li class="footer-catalog-item">
@@ -366,14 +373,16 @@
             <li class="footer-social-item"><a class="social-button instagram" href="#" aria-label="Наш Инстаграм">Instagram</a></li>
           </ul>
 
-          <div class="footer-feedback">
-              <span class="footer-bottom-text">Обратная связь: </span>
-              <a class="footer-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
+          <div class="developers-wrap">
+            <div class="footer-feedback">
+                <span class="footer-bottom-text">Обратная связь: </span>
+                <a class="footer-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
 
-          <div class="developer">
-            <span class="footer-bottom-text">Разработано — </span>
-            <a class="web-dev" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <div class="developer">
+              <span class="footer-bottom-text">Разработано — </span>
+              <a class="web-dev" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </div>
           </div>
         </div>
       </div>
