@@ -301,11 +301,19 @@ a {
 }
 
 .guest:hover .ravshan {
-    fill: var(--basic-navy)
+    fill: var(--basic-navy);
+}
+
+.guest:active .ravshan {
+    fill: var(--basic-greylight);
 }
 
 .exit:hover .log-out {
-    fill: var(--basic-navy)
+    fill: var(--basic-navy);
+}
+
+.exit:active .log-out {
+    fill: var(--basic-greylight);
 }
 
 .auth-link.guest:active {
@@ -325,7 +333,7 @@ a {
 }
 
 .header-user-profile {
-    margin: 5px auto 0 auto;
+    margin: 7px auto 0 auto;
     font-size: 16px;
     line-height: 16px;
 }
