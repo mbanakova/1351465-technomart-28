@@ -294,7 +294,7 @@ a {
 }
 
 .auth-link.guest {
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 10px;
     min-width: 200px;
     max-height: 44px;
@@ -439,6 +439,7 @@ a {
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
     background-position: 200px 50%;
+
 }
 
 .tools {
@@ -489,6 +490,7 @@ a {
 
 .feature-slider-hammerdrill {
     background-image: url(../img/slider-hammer-drill.jpg);
+
 }
 
 .feature-slider-drill {
@@ -555,6 +557,10 @@ a {
     margin-right: 14px;
 }
 
+.popular-items .button:active {
+background-color: var(--error);
+}
+
 /* Популярные производители */
 
 .popular-brands {
@@ -579,10 +585,14 @@ a {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 145px 145px;
     gap: 20px;
 }
 
 .popular-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #eaeaea;
 }
 
@@ -604,6 +614,10 @@ a {
     text-align: center;
     padding: 11px 39px 9px 39px;
     margin-right: 19px;
+}
+
+.popular-brands .button:active {
+    background-color: var(--error);
 }
 
 /* Сервисы */
