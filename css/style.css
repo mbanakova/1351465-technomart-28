@@ -795,11 +795,13 @@ background-color: var(--error);
 
 .filter-price-range,
 .filter-brands {
+    padding-left: 0;
     border: none;
     border-bottom: 1px solid var(--special-filter);
 }
 
 .filter-power {
+    padding-left: 0;
     border: none;
 }
 
@@ -838,16 +840,23 @@ background-color: var(--error);
 
 /* Ползунок фильтра цены */
 
+.range-wrapper {
+    background-color: var(--filter-beige);
+    padding: 39px 20px;
+
+}
+
 .filter-price-range {
     position: relative;
     width: auto;
     height: 127px;
+    padding-bottom: 50px;
 }
 
 .range-button-1,
 .range-button-2 {
     position: absolute;
-    top: 40%;
+    top: 41%;
     width: 20px;
     height: 20px;
     cursor: move;
@@ -859,10 +868,15 @@ background-color: var(--error);
     box-shadow: 0 2px #ababab;
 }
 
+.range-cells {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .range-input-1,
 .range-input-2 {
     margin: 10px auto;
-    width: 70px;
+    width: 95px;
     height: 38px;
     background-color: var(--filter-beige);
     border: none;
@@ -873,7 +887,7 @@ background-color: var(--error);
 }
 
 .range {
-    margin: 25px auto 20px auto;
+    margin: 0 auto ;
     padding: 0;
     width:180px;
     height:2px;
