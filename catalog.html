@@ -5,7 +5,7 @@
     <meta name="keywords" content="электроинструмент, дрели, перфораторы, стройматериалы, товары для ремонта, техника, интернет-магазин">
     <meta name="description" content="Интернет-магазин электроинструмента, материалов для ремонта и строительства. Доставка по Санкт-Петербургу и в регионы.">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>HTML Academy: Техномарт</title>
@@ -86,19 +86,19 @@
       
     <main>
         <h1 class="visually-hidden container">Техномарт. Страница каталога.</h1>
-        <div class="breadcrumbs container">
-          <a class="area-title" href="index.html">Главная</a>
-          <a class="area-title" href="catalog.html">Каталог</a>
-          <a class="area-title" href="#">Инструмент</a>
-          <a class="area-title">Перфораторы</a>
-        </div>
 
-        <div class="container">
-          <h2 class="section-title catalog-title">Перфораторы</h2>
-        </div>
+          <div class="breadcrumbs container">
+            <a class="area-title" href="index.html">Главная</a>
+            <a class="area-title" href="catalog.html">Каталог</a>
+            <a class="area-title" href="#">Инструмент</a>
+            <a class="area-title">Перфораторы</a>
+          </div>
 
-        <div class="filters-layout container">
-          <section class="filters">
+          <div class="container">
+            <h2 class="section-title catalog-title">Перфораторы</h2>
+          </div>
+
+          <section class="filters container">
               <h2 class="visually-hidden">Фильтр</h2>
 
               <div class="filters-wrap">
@@ -166,7 +166,7 @@
               </div>
           </section>    
 
-          <section class="catalog">
+          <section class="catalog container">
               <h2 class="visually-hidden">Каталог</h2>
               <div class="sort-items-bar">
                 <h3 class="area-title">Сортировка:</h3>
@@ -272,8 +272,6 @@
                   <a class="item-price" href="#">12500 р.</a>
                 </li>
               </ul>
-            </div>
-
 
             <div class="pagination container">
               <a class="page current" href="#">1</a>
@@ -281,7 +279,7 @@
               <a class="page" href="#">3</a>
               <a class="page" href="#">Следующая</a>
             </div>
-        </section> 
+          </section> 
 
         <section class="specification">
             <h2 class="section-title container">Пара слов о перфораторах</h2>

@@ -108,7 +108,7 @@ a {
 
 .header-search:focus {
     background-color: var(--white);
-    color: var(--basic-black);
+    color: var(--black);
 }
 
 .header-links-wrap {
@@ -743,8 +743,6 @@ background-color: var(--error);
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
 }
 
 .breadcrumbs .area-title {
@@ -775,20 +773,6 @@ background-color: var(--error);
 
 /* Каталог, фильтры */
 
-.filters-layout {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    align-content: flex-start;
-    gap: 20px;
-    outline-offset: -5px;
-    outline: 5px solid rgba(0, 255, 0, 0.7);
-}
-
-.filters-wrap {
-    outline-offset: -5px;
-    outline: 5px solid rgba(255, 0, 0, 0.7);
-}
-
 .filters-wrap .area-title {
     margin: 0;
     margin-bottom: 15px;
@@ -796,12 +780,6 @@ background-color: var(--error);
 
 .catalog {
     margin-bottom: 48px;
-}
-
-.catalog-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
 }
 
 .filter-price-range,
@@ -860,7 +838,8 @@ background-color: var(--error);
     transform: translateY(-50%);
     border: none;
     border-radius: 50%;
-    background-image: url("../img/filter-button.svg") no-repeat;
+    background-image: url("../img/filter-button.svg");
+    background-repeat: no-repeat;
     box-shadow: 0 2px #ababab;
 }
 
@@ -916,8 +895,7 @@ background-color: var(--error);
     line-height: 18px;
     text-transform: uppercase;
     font-weight: 400;
-    outline-offset: -5px;
-    outline: 5px solid rgba(0, 0, 255, 0.7);
+
 }
 
 .sort-items-bar .area-title {
@@ -953,7 +931,7 @@ background-color: var(--error);
     opacity: 1;
     color: var(--black);
     text-decoration: underline;
-    text-decoration-style: line;
+    text-decoration-style: solid;
     text-decoration-color: var(--basic-red);
 }
 
@@ -986,8 +964,7 @@ background-color: var(--error);
     margin: 0;
     padding: 0;
     list-style: none;
-    outline-offset: -5px;
-    outline: 5px solid rgba(255, 153, 0, 0.7);
+
 }
 
 /* Замена фото товара на кнопки, тест */
