@@ -280,6 +280,9 @@ a {
     fill: var(--basic-navy)
 }
 
+.auth-link.enter:active .log-in {
+    fill: var(--basic-greylight);
+}
 
 .auth-link.register {
     padding: 0 24px;
