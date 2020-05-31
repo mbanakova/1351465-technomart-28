@@ -574,9 +574,32 @@ a {
 
 .slider-arrows {
     position: absolute;
-    bottom: 100px;
-    left: 310px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 105px;
+    left: 25px;
     z-index: 10;
+    width: 570px;
+}
+
+.slider-arrows .arrow-left {
+    display: block;
+    min-width: 22px;
+    min-height: 40px;
+    background-image: url("../img/icon-left.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.slider-arrows .arrow-right {
+    display: block;
+    min-width: 22px;
+    min-height: 40px;
+    background-image: url("../img/icon-right.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 20;
 }
 
 .feature-slider-title {
