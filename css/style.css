@@ -2,30 +2,31 @@
     --black: #000000;
     --white: #ffffff;
     --basic-red: #ee3643;
+    --dark-red: #ba2732;
     --basic-green: #63a63e;
     --basic-navy: #3d546f;
     --basic-darknavy: #293449;
+    --special-dark: #161d29;
+    --special-social: #212a3a;
+    --special-nav: #1d2739;
+    --special-darkblue: #32425C;
     --basic-greylight: #c5c5c5;
     --basic-background: #f1f5f7;
     --basic-beige: #f9f5f0;
     --basic-light: #f3f5f9;
     --special-filter: #e5e5e5;
-    --special-oldprice: #a9a9a9;
-    --special-dark: #161d29;
-    --special-social: #212a3a;
-    --special-nav: #1d2739;
-    --special-darkblue: #32425C;
-    --special-yellow: #ffbf47;
-    --special-blue: #3bbce3;
-    --special-lilac: #dc91d8;
-    --special-greenlight: #8ed78f;
-    --special-yellowlight: #ffd180;
-    --special-buygreen: #367315;
-    --special-buyclick: #518534;
-    --success: #5fbb2d;
-    --error: #ba2732;
     --light-grey: #eaeaea;
     --filter-beige: #f7f3ec;
+    --special-oldprice: #a9a9a9;
+    --features-yellow: #ffbf47;
+    --features-yellow-delivery: #ffc047;
+    --footer-yellowlight: #ffd180;
+    --features-blue: #3bbce3;
+    --features-lilac: #dc91d8;
+    --features-greenlight: #8ed78f;
+    --special-buygreen: #367315;
+    --special-buyclick: #518534;
+    --button-hovergreen: #5fbb2d;
 }
 
 body {
@@ -84,7 +85,7 @@ a {
 }
 
 .header-logo:active {
-    background-color: var(--error);
+    background-color: var(--dark-red);
 }
 
 .logo {
@@ -153,7 +154,7 @@ a {
 }
 
 .make-order:hover {
-    background-color: var(--success);
+    background-color: var(--button-hovergreen);
 }
 
 .make-order:active {
@@ -465,21 +466,21 @@ a {
 }
 
 .materials {
-    background-color: var(--special-yellow);
+    background-color: var(--features-yellow);
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
     background-position: 200px 50%;
 }
 
 .tools {
-    background-color: var(--special-blue);  
+    background-color: var(--features-blue);  
     background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
     background-position: 200px 50%;  
 }
 
 .technics {
-    background-color: var(--special-lilac);  
+    background-color: var(--features-lilac);  
     background-image: url(../img/icon-3.svg);
     background-repeat: no-repeat;
     background-position: 200px 50%;
@@ -487,14 +488,14 @@ a {
 }
 
 .discounts {
-    background-color: var(--special-greenlight);    
+    background-color: var(--features-greenlight);    
     background-image: url(../img/icon-4.svg);
     background-repeat: no-repeat;
     background-position: 200px 50%;
 }
 
 .delivery {
-    background-color: #ffc047;    
+    background-color: var(--features-yellow-delivery);    
     background-image: url(../img/icon-5.svg);
     background-repeat: no-repeat;
     background-position: 200px 50%;
@@ -625,7 +626,7 @@ a {
 }
 
 .slider-slides .button:active {
-    background-color: var(--error);
+    background-color: var(--dark-red);
 }
 
 .slider-controls .slider-label {
@@ -658,9 +659,6 @@ a {
     transform: translate(-620px);
     transition: transform 0.8s ease;  
   }
-
-
-
 
 /* Популярные товары */
 
@@ -703,7 +701,7 @@ a {
 }
 
 .popular-items .button:active {
-background-color: var(--error);
+    background-color: var(--dark-red);
 }
 
 /* Популярные производители */
@@ -762,7 +760,7 @@ background-color: var(--error);
 }
 
 .popular-brands .button:active {
-    background-color: var(--error);
+    background-color: var(--dark-red);
 }
 
 /* Сервисы */
@@ -1308,8 +1306,8 @@ background-color: var(--error);
 }
 
 .buy:hover {
-    background-color: var(--success);
-    border: 1px solid var(--success);
+    background-color: var(--button-hovergreen);
+    border: 1px solid var(--button-hovergreen);
 }
 
 .buy:active {
@@ -1450,7 +1448,7 @@ background-color: var(--error);
 }
 
 .technomart .button:active {
-    background-color: var(--error);
+    background-color: var(--dark-red);
 }
 
 /* Контакты */
@@ -1486,7 +1484,7 @@ background-color: var(--error);
 }
 
 .contacts .button:active {
-    background-color: var(--error);
+    background-color: var(--dark-red);
 }
 
 /* Нумерация страниц каталога */
@@ -1634,7 +1632,7 @@ background-color: var(--error);
 }
 
 .footer-catalog-link {
-    color: var(--special-yellowlight);
+    color: var(--footer-yellowlight);
 }
 
 .footer-catalog-link:hover {
@@ -1732,7 +1730,7 @@ background-color: var(--error);
 
 .footer-email,
 .web-dev {
-    color: var(--special-yellowlight);
+    color: var(--footer-yellowlight);
 }
 
 .footer-email:hover,
@@ -1746,8 +1744,42 @@ background-color: var(--error);
     text-decoration: none;
 }
 
+/* Кнопка "наверх" */
+
+.up-button {
+    position: fixed;
+    z-index: 10;
+    padding: 0;
+    bottom: 25px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 2px solid var(--special-dark);
+    background-color: var(--basic-red);
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.up-button:hover {
+    border: 2px solid var(--special-dark);
+    background-color: var(--dark-red);
+}
+
+.up-button:active {
+    border: 2px solid var(--special-dark);
+    background-color: var(--basic-red);
+}
+
+.shown {
+    display: block;
+}
+
+/* Поп-апы */
+
 .pop-up {
-    /* display: none; */
+    display: none;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     border-top: 7px solid var(--basic-red);
     position: relative;
@@ -1889,11 +1921,11 @@ background-color: var(--error);
 
 .pop-form-wrap .submit:active,
 .pop-up-links .button:active {
-    background-color: var(--error);
+    background-color: var(--dark-red);
 }
 
 .pop-up-links .keep-shopping:active {
-    color: var(--error);
+    color: var(--dark-red);
     background-color: var(--white);
 }
 
