@@ -110,29 +110,36 @@
             </li>
           </ul>
 
-          <ul class="slider feature-slider">
-            <li class="feature-slider-hammerdrill active">
-              <h3 class="feature-slider-title">Перфораторы</h3>
-              <p class="feature-slider-text">Настоящие мужские игрушки</p>
-              <a class="button" href="#">Открыть каталог</a>
-            </li>
+          <div class="slider">
+            <input class="radio-slider" type="radio" id="btn-1" name="toggle" checked>
+            <input class="radio-slider" type="radio" id="btn-2" name="toggle">
 
-            <li class="slider feature-slider-drill">
-              <h3 class="feature-slider-title">Дрели</h3>
-              <p class="feature-slider-text">Соседям на радость!</p>
-              <a class="button" href="#">Открыть каталог</a>
-            </li>
-          </ul>
-          <div class="slider-arrows">
-            <button class="slider-arrows arrow-left" type="button"><span class="visually-hidden">Влево</span></button> 
-            <button class="slider-arrows arrow-right" type="button"><span class="visually-hidden">Вправо</span></button> 
+            <div class="slider-controls">
+              <label class="slider-label" for="btn-1"></label>
+              <label class="slider-label" for="btn-2"></label>
+            </div>
+
+            <div class="slider-arrows">
+              <label class="arrow-left" for="btn-1"></label>
+              <label class="arrow-left" for="btn-2"></label>
+            </div>
+
+            <div class="slider-inner">
+              <ul class="slider-slides">
+                <li class="feature-slider hammerdrill active">
+                  <h3 class="feature-slider-title">Перфораторы</h3>
+                  <p class="feature-slider-text">Настоящие мужские игрушки</p>
+                  <a class="button" href="#">Открыть каталог</a>
+                </li>
+
+                <li class="feature-slider drill">
+                  <h3 class="feature-slider-title">Дрели</h3>
+                  <p class="feature-slider-text">Соседям на радость!</p>
+                  <a class="button" href="#">Открыть каталог</a>
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <div class="slider-toggle">
-            <input class="toggle" type="radio" id="slide-left" name="toggle" checked>
-            <input class="toggle" type="radio" id="slide-right" name="toggle">
-          </div>
-
       </section>
 
       <!-- Популярные товары -->
