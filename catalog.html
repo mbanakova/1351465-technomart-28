@@ -397,15 +397,22 @@
     </footer>
 
     <!-- Поп-ап -->
-    <section class="pop-up container">
-      <div class="pop-up-header">
-        <h3 class="pop-up-title">Товар добавлен в корзину!</h3>
+    <section class="pop-up item-in-cart container">
+
+      <div class="wrapper">
+        <div class="pop-up-header">
+          <h3 class="pop-up-title">Товар добавлен в корзину!</h3>
+        </div>
       </div>
-      <div class="pop-up-links">
-        <a class="button" href="#">Оформить заказ</a>
-        <a class="button" href="#">Продолжить покупки</a>
+      
+      <div class="form-submit">
+        <div class="pop-up-links wrapper">
+          <a class="button submit" href="#">Оформить заказ</a>
+          <a class="button submit keep-shopping" href="#">Продолжить покупки</a>
+        </div>
       </div>
-      <button type="button">Закрыть</button>
+
+      <button class="pop-close" type="button">Закрыть</button>
     </section>
 
     <script src="js/bookmarks-buy-counter.js"></script>

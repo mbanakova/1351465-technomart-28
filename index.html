@@ -408,35 +408,42 @@
     <section class="pop-up container">
       <h2 class="section-title visually-hidden">Большая карта</h2>
       <img src="img/map-large.png" width="970" height="477" alt="Большая карта местности">
-      <button type="button">Закрыть</button>
+      <button class="pop-close" type="button">Закрыть</button>
     </section>
 
     <!-- Поп-ап с формой -->
-    <section class="pop-up container">
+    <section class="pop-up feedback-form container">
       <h2 class="section-title visually-hidden">Отправить нам письмо</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-input">
-          <p>
-            <label for="pop-user-name">Ваше имя:</label>
-            <input id="pop-user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
-          </p>
 
-          <p>
-            <label for="pop-user-email">Ваш e-mail:</label>
-            <input id="pop-user-email" type="email" name="user-email" placeholder="email@example.com" required>
-          </p>
 
-          <p>
-            <label for="pop-user-message">Текст письма:</label>
-            <textarea id="pop-user-message" name="user-message" placeholder="В свободной форме" required></textarea>
-          </p>
-        </div>
+        <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-input pop-form-wrap">
+            <div class="name-email">
+            <p>
+              <label class="pop-label" for="pop-user-name">Ваше имя:</label>
+              <input class="pop-input" id="pop-user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
+            </p>
 
-        <div class="form-submit">
-          <button type="submit">Отправить</button>
-        </div>
-      </form>
-      <button type="button">Закрыть</button> 
+            <p>
+              <label class="pop-label" for="pop-user-email">Ваш e-mail:</label>
+              <input class="pop-input" id="pop-user-email" type="email" name="user-email" placeholder="email@example.com" required>
+            </p>
+            </div>
+
+            <p>
+              <label class="pop-label" for="pop-user-message">Текст письма:</label>
+              <textarea class="pop-input pop-text-area" id="pop-user-message" name="user-message" placeholder="В свободной форме" required></textarea>
+            </p>
+          </div>
+
+          <div class="form-submit">
+            <div class="pop-form-wrap">
+              <button class="submit" type="submit">Отправить</button>
+            </div>
+          </div>
+        </form>
+
+      <button class="pop-close" type="button">Закрыть</button> 
     </section>
 
     <script src="js/bookmarks-buy-counter.js"></script>

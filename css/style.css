@@ -1573,10 +1573,124 @@ background-color: var(--error);
     text-decoration: none;
 }
 
-
-
-
-
 .pop-up {
-    display: none;
+    /* display: none; */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-top: 7px solid var(--basic-red);
+    position: relative;
+}
+
+.pop-close {
+    position: absolute;
+    top: 14px;
+    right: 11px;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/icon-close.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.feedback-form {
+    width: 620px;
+    height: 430px;
+    padding: 0;
+}
+
+.item-in-cart {
+    width: 620px;
+    height: 275px;
+    padding: 0;
+}
+
+.item-in-cart .wrapper {
+    width: 394px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop-form-wrap {
+    width: 460px;
+    margin: 0 auto; 
+}
+.write-us {
+    margin-top: 46px;
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pop-up .form-submit {
+    padding: 37px 0;
+    background-color: #f4f4f4;
+}
+
+.pop-input {
+    margin-top: 11px;
+    border: 2px solid var(--basic-greylight);
+    height: 38px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 12px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    color: var(--special-oldprice)
+}
+
+.pop-input.pop-text-area {
+    width: 100%;
+    height: 114px;
+}
+
+.form-submit .submit {
+    background-color: var(--basic-red);
+    width: 100%;
+    border: none;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 11px 24px 9px 24px;
+}
+
+.item-in-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../img/icon-mark.svg");
+    background-repeat: no-repeat;
+    background-position: 100px 40px;
+}
+
+.item-in-cart .pop-up-title {
+    margin-top: 63px;
+    margin-bottom: 0;
+}
+
+.pop-up .keep-shopping {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.pop-up-links.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.pop-up-links .button {
+    max-width: 192px;
+    box-sizing: border-box;
+    text-align: center;
 }
