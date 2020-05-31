@@ -1172,9 +1172,24 @@ background-color: var(--error);
     margin-right: 0;
 }
 
+/* Переделка кнопок карточек */
+
+.popular-item,
+.catalog-list-item {
+    position: relative;
+}
+
+.cart-buttons {
+    position: absolute;
+    top: 15px;
+    left: 42px;
+}
+
 .popular-item .product,
 .catalog-list-item .product {
     margin-bottom: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .popular-item {
@@ -1182,10 +1197,13 @@ background-color: var(--error);
 }
 
 .card-bottom {
+    position: absolute;
+    bottom: 21px;
+
     display: flex;
     flex-direction: column;
     flex-basis: 120px;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -1293,10 +1311,17 @@ background-color: var(--error);
     text-transform: uppercase;
     text-decoration: line-through;
     color: var(--special-oldprice);
+    display: block;
+    margin-top: 7px;
+}
+
+.old-price.none {
+    color: transparent;
 }
 
 .item-price {
     position: relative;
+    display: block;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 17px;
@@ -1308,6 +1333,7 @@ background-color: var(--error);
     width: 120px;
     padding: 10px 10px 11px 0;
     border-radius: 3px 0 0 3px;
+    margin: 13px auto 0;
 }
 
 .item-price:after {
