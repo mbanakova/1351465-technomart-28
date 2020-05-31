@@ -1779,7 +1779,6 @@ a {
 /* Поп-апы */
 
 .pop-up {
-    display: none;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     border-top: 7px solid var(--basic-red);
     position: relative;
@@ -1889,6 +1888,8 @@ a {
 }
 
 .item-in-cart {
+    width: 620px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1942,3 +1943,10 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+
+
+.pop-up {
+    display: none;
+} 
+
