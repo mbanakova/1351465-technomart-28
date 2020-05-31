@@ -81,7 +81,7 @@
       <section class="features container">
         <h2 class="visually-hidden">Наши особенности</h2>
 
-          <ul class="feature-items">
+          <ul class="feature-items features-top">
             <li class="feature-item materials new">
               <h3 class="feature-title">Материалы</h3>
               <a class="button" href="#">На любой вкус</a>
@@ -96,7 +96,9 @@
               <h3 class="feature-title">Техника</h3>
               <a class="button" href="#">Для стройки</a>
             </li>
+          </ul>
 
+          <ul class="feature-items features-right">
             <li class="feature-item discounts">
               <h3 class="feature-title">Скидки 50%</h3>
               <a class="button" href="#">На 350 товаров</a>
@@ -108,24 +110,28 @@
             </li>
           </ul>
 
-          <ul class="feature-slider">
-            <li class="feature-slider-hammerdrill">
+          <ul class="slider feature-slider">
+            <li class="feature-slider-hammerdrill active">
               <h3 class="feature-slider-title">Перфораторы</h3>
               <p class="feature-slider-text">Настоящие мужские игрушки</p>
-              <a class="button"  href="#">Открыть каталог</a>
+              <a class="button" href="#">Открыть каталог</a>
             </li>
 
-            <li class="feature-slider-drill">
+            <li class="slider feature-slider-drill">
               <h3 class="feature-slider-title">Дрели</h3>
               <p class="feature-slider-text">Соседям на радость!</p>
-              <a class="button"  href="#">Открыть каталог</a>
+              <a class="button" href="#">Открыть каталог</a>
             </li>
           </ul>
           <div class="slider-arrows">
-            <button type="button">Влево</button> 
-            <button type="button">Вправо</button> 
+            <button class="slider-arrows arrow-left" type="button"><span class="visually-hidden">Влево</span></button> 
+            <button class="slider-arrows arrow-right" type="button"><span class="visually-hidden">Вправо</span></button> 
           </div>
 
+          <div class="slider-toggle">
+            <input class="toggle" type="radio" id="slide-left" name="toggle" checked>
+            <input class="toggle" type="radio" id="slide-left" name="toggle">
+          </div>
 
       </section>
 

@@ -393,13 +393,35 @@ a {
 .features {
     margin-top: 68px;
     margin-bottom: 59px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 123px 123px 123px;
+    gap: 20px;
 }
 
 .feature-items {
     margin: 0;
     padding: 0;
     list-style: none;
+}
 
+.features-top {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.features-right {
+    display: grid;
+    gap: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .feature-title {
@@ -442,12 +464,51 @@ a {
     opacity: 0.3;
 }
 
+.slider-arrows {
+    position: absolute;
+    top: 325px;
+    width: 22px;
+    height: 40px;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.arrow-left {
+    background-image: url("../img/icon-left.svg");
+    background-repeat: no-repeat;
+    left: 25px;
+}
+
+.arrow-right {
+    background-image: url("../img/icon-right.svg");
+    background-repeat: no-repeat;
+    left: 575px;
+}
+
+/* Точки на слайдере */
+
+.slider-toggle {
+    position: absolute;
+    left: 38%;
+    bottom: -40px;
+    display: flex;
+}
+
+.toggle {
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    background-color: #ee3643;
+    margin-right: 10px;
+}
+
 .materials {
     background-color: var(--special-yellow);
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
     background-position: 200px 50%;
-
 }
 
 .tools {
@@ -490,21 +551,54 @@ a {
 
 .feature-slider-hammerdrill {
     background-image: url(../img/slider-hammer-drill.jpg);
-
+    padding-left: 24px;
+    padding-top: 23px;
+    padding-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .feature-slider-drill {
     background-image: url(../img/slider-drill.jpg);
+    padding-left: 24px;
+    padding-top: 23px;
+    padding-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.slider {
+    display: none;
+    position: relative;
+}
+
+.slider.active {
+    display: block;
+}
+
+.feature-slider {
+    display: grid;
+    gap: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .feature-slider-title {
     margin: 0;
+    margin-bottom: 10px;
     font-size: 36px;
     line-height: 36px;
 }
 
 .feature-slider-text {
     margin: 0;
+    margin-bottom: auto;
 }
 
 .feature-slider .button {
@@ -515,6 +609,10 @@ a {
     text-transform: uppercase;
     text-align: center;
     padding: 11px 46px 9px 46px;
+}
+
+.feature-slider .button:active {
+    background-color: var(--error);
 }
 
 /* Популярные товары */
@@ -1725,6 +1823,7 @@ background-color: var(--error);
     color: var(--error);
     background-color: var(--white);
 }
+
 /* Большая карта */
 
 .large-map {
