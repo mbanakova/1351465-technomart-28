@@ -1244,7 +1244,7 @@ a {
 .card-bottom {
     position: absolute;
     bottom: 21px;
-
+    left: 8px;
     display: flex;
     flex-direction: column;
     flex-basis: 120px;
