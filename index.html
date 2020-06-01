@@ -20,7 +20,7 @@
           <a class="header-logo">
             <img class="logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">
           </a>
-          <form action="#" method="post">
+          <form class="search" action="#" method="post">
             <input class="header-search" type="search" placeholder="Поиск:">
           </form>
 
@@ -54,20 +54,35 @@
                     <path class="log-in" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>Войти
                 </a>
                 </li>
-              <li class="user-button"><a class="auth-link register" href="#">Регистрация</a></li>
+              <li class="user-button">
+                <a class="auth-link register" href="#">Регистрация</a>
+              </li>
             </ul>
         </div>
         </div>
 
         <nav class="main-header-nav container">
           <ul class="site-navigation">
-            <li class="site-navigation-item"><a class="nav-link" href="index.html">Главная</a></li>
-            <li class="site-navigation-item"><a class="nav-link" href="#">Компания</a></li>
-            <li class="site-navigation-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-            <li class="site-navigation-item"><a class="nav-link" href="#">Новости</a></li>
-            <li class="site-navigation-item"><a class="nav-link" href="#">Спецпредложения</a></li>
-            <li class="site-navigation-item"><a class="nav-link" href="#">Доставка</a></li>
-            <li class="site-navigation-item"><a class="nav-link" href="#">Контакты</a></li>
+            <li class="site-navigation-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="nav-link" href="#">Компания</a></li>
+            <li class="site-navigation-item">
+              <a class="nav-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="nav-link" href="#">Новости</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="nav-link" href="#">Спецпредложения</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="nav-link" href="#">Доставка</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -129,13 +144,13 @@
                 <li class="feature-slider hammerdrill active">
                   <h3 class="feature-slider-title">Перфораторы</h3>
                   <p class="feature-slider-text">Настоящие мужские игрушки</p>
-                  <a class="button" href="#">Открыть каталог</a>
+                  <a class="button" href="catalog.html">Открыть каталог</a>
                 </li>
 
                 <li class="feature-slider drill">
                   <h3 class="feature-slider-title">Дрели</h3>
                   <p class="feature-slider-text">Соседям на радость!</p>
-                  <a class="button" href="#">Открыть каталог</a>
+                  <a class="button" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
             </div>
@@ -436,7 +451,9 @@
       <h2 class="section-title visually-hidden">Большая карта</h2>
 
       <div class="pop-map">
-        <img src="img/map-large.png" width="970" height="477" alt="Большая карта местности">
+        <a href="https://www.google.ru/maps/">
+          <img src="img/map-large.png" width="970" height="477" alt="Большая карта местности">
+        </a>
       </div>
       <button class="pop-close" type="button">Закрыть</button>
     </section>
