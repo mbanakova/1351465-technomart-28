@@ -368,8 +368,9 @@ a {
 }
 
 .auth-link.guest {
-    padding-left: 30px;
-    padding-right: 10px;
+    position: relative;
+    padding-left: 47px;
+    padding-right: 3px;
     min-width: 200px;
     max-height: 44px;
 }
@@ -395,7 +396,9 @@ a {
 }
 
 .ravshan-face {
-
+    position: absolute;
+    top: 11px;
+    left: 13px;
 }
 
 .ravshan {
@@ -964,9 +967,8 @@ a {
     margin: 0;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
-    max-width: 330px;
+    max-width: 315px;
 }
-
 
 /* Каталог, сетка  */
 
@@ -1180,7 +1182,7 @@ a {
 .range-button-1,
 .range-button-2 {
     position: absolute;
-    top: 70px%;
+    top: 40px;
     width: 20px;
     height: 20px;
     cursor: move;
@@ -1397,7 +1399,7 @@ a {
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 }
 /* Замена фото товара на кнопки, тест */
 
@@ -1462,8 +1464,6 @@ a {
     margin-bottom: auto;
     max-width: 100%;
     height: auto;
-    outline-offset: -5px;
-    outline: 5px solid rgba(255, 0, 140, 0.7);
 }
 
 .popular-item {
@@ -1731,7 +1731,7 @@ a {
 /* Нумерация страниц каталога */
 
 .pagination {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
 }
 
 .page {
@@ -1740,12 +1740,18 @@ a {
     line-height: 38px;
     min-width: 38px;
     text-align: center;
+    text-transform: uppercase;
     color: var(--black);
-    padding: 11px 15px;
+    padding: 10px 15px;
     background-color: var(--white);
     border: 1px solid var(--special-filter);
     border-radius: 2px;
     box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.next-page {
+    padding: 10px 31px;
 }
 
 .page:hover {
@@ -1768,7 +1774,7 @@ a {
 .specification {
     background-color: var(--basic-background);
     padding-top: 64px;
-    padding-bottom: 68px;
+    padding-bottom: 70px;
 }
 
 .specification .section-title {
