@@ -34,7 +34,7 @@
         <div class="header-wrapper">
             <div class="header-middle container">
               <p class="header-shop-description">
-                Интернет-магазин строительных материалов и инструментов для ремонта
+                Интернет-магазин строительных материалов<br> и инструментов для ремонта
               </p>
 
               <div class="header-contacts">
@@ -48,7 +48,7 @@
                 <ul class="user-auth">
                   <li class="user-button">
                     <a class="auth-link guest" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                      <svg class="ravshan-face" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                         <path  class="ravshan" fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
                     Равшан Джамшутович
                     </a>
@@ -130,7 +130,7 @@
                           <label class="filter-label" for="filter-bosch">Bosch</label>
                         </li>
                         <li class="filter-brand-item">
-                          <input class="filter-input" type="checkbox" name="interscol" id="filter-interscol">
+                          <input class="filter-input" type="checkbox" name="interscol" id="filter-interscol" disabled>
                           <label class="filter-label" for="filter-interscol">Интерскол</label>
                         </li>
                         <li class="filter-brand-item">
@@ -152,7 +152,7 @@
                       <legend class="filter-legend">Питание:</legend>
                       <ul class="filter-power-list">
                         <li class="filter-power-item">
-                          <input class="filter-input" type="radio" name="power" value="battery" id="filter-battery" checked>
+                          <input class="filter-input" type="radio" name="power" value="battery" id="filter-battery" checked >
                           <label class="filter-label" for="filter-battery">Аккумуляторные</label>
                         </li>
                         <li class="filter-power-item">
@@ -171,23 +171,28 @@
               <div class="sort-items-bar">
                 <h3 class="area-title">Сортировка:</h3>
 
-                <ul class="sort-items-list">
-                  <li class="sort-item">
-                    <a class="sort-item-link rank" href="#">По цене</a>
-                  </li>
-                  <li class="sort-item">
-                    <a class="sort-item-link rank" href="#">По типу</a>
-                  </li>
-                  <li class="sort-item">
-                    <a class="sort-item-link rank" href="#">По функционалу</a>
-                  </li>
-                  <li class="sort-item">
-                    <a class="sort-item-link up" href="#">Вверх</a>
-                  </li>
-                  <li class="sort-item">
-                    <a class="sort-item-link down" href="#">Вниз</a>
-                  </li>
-                </ul>
+                <div class="sort-wrap">
+                  <ul class="sort-items-list">
+                    <li class="sort-item">
+                      <a class="sort-item-link rank" href="#">По цене</a>
+                    </li>
+                    <li class="sort-item">
+                      <a class="sort-item-link rank" href="#">По типу</a>
+                    </li>
+                    <li class="sort-item">
+                      <a class="sort-item-link rank" href="#">По функционалу</a>
+                    </li>
+                  </ul>
+
+                  <ul class="sort-items-list">
+                    <li class="sort-item">
+                      <a class="sort-item-link up" href="#">Вверх</a>
+                    </li>
+                    <li class="sort-item">
+                      <a class="sort-item-link down" href="#">Вниз</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <ul class="catalog-list">
