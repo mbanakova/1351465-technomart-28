@@ -938,13 +938,13 @@ a {
 .tab-content:nth-child(2) {
     background-image: url(../img/warranty.png);
     background-repeat: no-repeat;
-    background-position: right 30px;
+    background-position: right top;
 }
 
 .tab-content:last-child {
     background-image: url(../img/credit.png);
     background-repeat: no-repeat;
-    background-position: right 30px;
+    background-position: right top;
 }
 
 .tab-title {
@@ -960,7 +960,7 @@ a {
     margin: 0;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
-    max-width: 280px;
+    max-width: 330px;
 }
 
 
