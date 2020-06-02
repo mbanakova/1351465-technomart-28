@@ -21,6 +21,7 @@
     --special-oldprice: #a9a9a9;
     --special-range-grey: #ababab;
     --pop-up-grey: #f4f4f4;
+    --radio-hover-grey: #b5b5b5;
     --features-yellow: #ffbf47;
     --features-yellow-delivery: #ffc047;
     --footer-yellowlight: #ffd180;
@@ -1079,107 +1080,72 @@ a {
 }
 
 .filter-input {
-    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
 }
-
-
-
-
-
 
 /* Чекбокс пустой */
 
-/* .filter-brand-item .filter-label::before {
+.filter-brand-item .filter-label::before {
     position: absolute;
     top: 0;
     left: 0;
-    width:23px;
+    width: 23px;
     height: 23px;
     content: "";
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
-}
-
-/* Чекбокс пустой, наведение */
-
-/* .filter-brand-item .filter-label:hover::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:23px;
-    height: 23px;
-    content: "";
-    background-image: url("../img/checkbox-off-hover.svg");
-    background-repeat: no-repeat;
-}
+} 
 
 /* Чекбокс активный */
 
-/* .filter-brand-item .filter-input:checked + .filter-label::before {
+.filter-brand-item .filter-input:checked + .filter-label::before {
     background-image: url("../img/checkbox-on.svg");
-    background-repeat: no-repeat;
-} */
-
-/* Чекбокс активный, наведение */
-
-/* .filter-brand-item .filter-input:checked + .filter-label:hover::before  {
-    background-image: url("../img/checkbox-on-hover.svg"), ("../img/checkbox-off-hover.svg");
     background-repeat: no-repeat;
 }
 
-.filter-brand-item .filter-input:disabled + .filter-label::before {
-    background-image: url("../img/checkbox-off-disabled.svg");
-    opacity: 0.4;
-} */
+/* Чекбокс активный, заблокирован */
+
+.filter-brand-item .filter-input:disabled + .filter-label::before { 
+    background-image: url("../img/checkbox-on-disabled.svg");
+    background-repeat: no-repeat;
+}
 
 /* Радиобаттон пустой */
 
-/* .filter-power-item .filter-label::before {
+.filter-power-item .filter-label::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 3em;
-    height: 3em;
+    width: 25px;
+    height: 25px;
     content: "";
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
-} */
-
-/* Радиобаттон пустой, наведение */
-
-/* .filter-power-item .filter-label:hover::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3em;
-    height: 3em;
-    content: "";
-    background-image: url("../img/radio-off-hover.svg");
-    background-repeat: no-repeat;
-} */
+} 
 
 /* Радиобаттон активный */
 
-/* .filter-power-item .filter-input:checked + .filter-label::before {
+.filter-power-item .filter-input:checked + .filter-label::before {
     background-image: url("../img/radio-on.svg");
     background-repeat: no-repeat;
-} */
+}
 
-/* Радиобаттон активный, наведение */
+/* Радиобаттон активный, заблокирован */
 
-/* .filter-brand-item .filter-input:checked + .filter-label:hover::before  {
-    background-image: url("../img/checkbox-off-hover.svg"), ("../img/checkbox-on-hover.svg");
+.filter-power-item .filter-input:disabled + .filter-label::before { 
+    background-image: url("../img/radio-on-disabled.svg");
     background-repeat: no-repeat;
-} */ 
-
-
+}
 
 
 /* Все чекбоксы и радио отключённые (надпись к ним)  */
 
-/* .filter-input:disabled + .filter-label {
+.filter-input:disabled + .filter-label {
     opacity: 0.4;
-} */ 
+} 
 
 /* Фильтр с ценой, бежевый */
 
