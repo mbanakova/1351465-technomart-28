@@ -870,56 +870,36 @@ a {
     width: 940px;
     min-height: 186px;
     padding-bottom: 99px;
+    background-image: url("../img/tab-shadow.png");
+    background-repeat: no-repeat;
+    background-position: 246px -40px;
 }
 
-.tabs-items {
-    margin: 0 0 0 15px;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+.tab {
+    display: none;
 }
 
 .tabs-item {
+    display: flex;
+    flex-direction: column;
     width: 240px;
     height: 62px;
     background-color: var(--special-darkblue);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--white);
     box-shadow: 0px 1px 0px var(--basic-darknavy), inset 0px 1px 0px var(--tab-shadow-blue);
     box-sizing: border-box;
+    padding: 14px 0 17px 22px;
 }
 
 .tabs-item:hover {
     background-color: var(--basic-darknavy);
     box-shadow: 0px 1px 0px var(--basic-darknavy), inset 0px 1px 0px var(--tab-shadow-blue);
 }
-.tabs-item:hover .tab{
-    color: var(--white);
-}
 
-.active {
-    background-color: var(--white);
-    box-shadow: 0px 1px 0px var(--white);
-}
-.active:hover {
-    color: var(--white);
-    background-color: var(--basic-darknavy);
-    box-shadow: 0px 1px 0px var(--basic-darknavy), inset 0px 1px 0px var(--tab-shadow-blue);
-}
-
-.tab {
-    font-size: 21px;
-    line-height: 61px;
-    color: var(--white);
-    padding: 0 0 0 24px;
-    display: inline-block;
-}
-
-.active .tab {
-    color: var(--special-darkblue);
-}
-
-.tabs-content {
+.tab-content {
     position: absolute;
     right: 14px;
     top: -11px;
@@ -927,28 +907,38 @@ a {
     padding: 0;
     height: 200px;
     min-width: 620px;
-    overflow: hidden;
-    list-style: none;
-}
-
-.tab-content {
     width: 620px;
     height: 200px;
+    display: none;
 }
 
-.tab-content:first-child {
+#tab-1:checked ~ .item1,
+#tab-2:checked ~ .item2,
+#tab-3:checked ~ .item3 {
+    color: var(--special-darkblue);
+    background-color: var(--white);
+    box-shadow: none;
+}
+
+#tab-1:checked ~ .tab-content.content1,
+#tab-2:checked ~ .tab-content.content2,
+#tab-3:checked ~ .tab-content.content3 {
+    display: block;
+}
+
+.content1 {
     background-image: url(../img/delivery.png);
     background-repeat: no-repeat;
     background-position: right 30px;
 }
 
-.tab-content:nth-child(2) {
+.content2 {
     background-image: url(../img/warranty.png);
     background-repeat: no-repeat;
     background-position: right top;
 }
 
-.tab-content:last-child {
+.content3 {
     background-image: url(../img/credit.png);
     background-repeat: no-repeat;
     background-position: right top;
