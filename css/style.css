@@ -535,13 +535,11 @@ a {
 }
 
 .feature-item .button:hover {
-    background-color: var(--basic-greylight);
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .feature-item .button:active {
-    background-color: var(--special-oldprice);
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .materials {
@@ -1050,10 +1048,12 @@ a {
 .filter-power {
     padding-left: 0;
     border: none;
+    margin-bottom: 10px;
 }
 
 .filter-legend {
-    padding-top: 18px;
+    padding-top: 17px;
+    padding-bottom: 5px;
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
@@ -1071,6 +1071,10 @@ a {
     list-style: none;
 }
 
+.filter-power-list {
+    margin-top: 8px;
+}
+
 .filter-label {
     position: relative;
     font-size: 15px;
@@ -1084,6 +1088,14 @@ a {
     -moz-appearance: none;
     appearance: none;
     position: absolute;
+}
+
+.filter-brand-item {
+    padding-bottom: 16px;
+}
+
+.filter-power-item {
+    padding-bottom: 16px;
 }
 
 /* Чекбокс пустой */
