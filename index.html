@@ -351,7 +351,7 @@
 
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="small-map" href="#"><img src="img/map-small.png" width="300" height="158" alt="Когда-нибудь тут появится карта"></a>
-          <a class="button"  href="#">Заблудились? Напишите нам!</a>
+          <a class="button mail"  href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -447,7 +447,7 @@
     </a>
 
     <!-- Поп-ап с картой-->
-    <section class="pop-up large-map">
+    <section class="pop-up large-map hide">
       <h2 class="section-title visually-hidden">Большая карта</h2>
 
       <div class="pop-map">
@@ -455,11 +455,11 @@
           <img src="img/map-large.png" width="970" height="477" alt="Большая карта местности">
         </a>
       </div>
-      <button class="pop-close" type="button">Закрыть</button>
+      <button class="pop-close map" type="button">Закрыть</button>
     </section>
 
     <!-- Поп-ап с формой -->
-    <section class="pop-up feedback-form container">
+    <section class="pop-up feedback-form container hide">
       <h2 class="section-title visually-hidden">Отправить нам письмо</h2>
 
         <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
@@ -489,11 +489,12 @@
           </div>
         </form>
 
-      <button class="pop-close" type="button">Закрыть</button> 
+      <button class="pop-close no-mail" type="button">Закрыть</button> 
     </section>
 
     <script src="js/bookmarks-buy-counter.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/page-up.js"></script>
+    <script src="js/hide-pop-up.js"></script>
   </body>
 </html>
