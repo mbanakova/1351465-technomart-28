@@ -438,21 +438,22 @@
     </a>
 
     <!-- Поп-ап с картой-->
-    <section class="pop-up large-map hide">
+    <section class="pop-up">
       <h2 class="section-title visually-hidden">Большая карта</h2>
-
-      <div class="pop-map">
-        <a href="https://www.google.ru/maps/">
-          <img src="img/map-large.png" width="922" height="433" alt="Большая карта местности">
-        </a>
+      <div class="pop large-map hide">
+        <div class="pop-map">
+          <a href="https://www.google.ru/maps/">
+            <img src="img/map-large.png" width="922" height="433" alt="Большая карта местности">
+          </a>
+        </div>
+        <button class="pop-close map" type="button">Закрыть</button>
       </div>
-      <button class="pop-close map" type="button">Закрыть</button>
     </section>
 
     <!-- Поп-ап с формой -->
-    <section class="pop-up feedback-form container hide">
+    <section class="pop-up">
       <h2 class="section-title visually-hidden">Отправить нам письмо</h2>
-
+      <div class="pop feedback-form container hide">
         <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-input pop-form-wrap">
             <div class="name-email">
@@ -480,7 +481,8 @@
           </div>
         </form>
 
-      <button class="pop-close no-mail" type="button">Закрыть</button> 
+        <button class="pop-close no-mail" type="button">Закрыть</button> 
+      </div>
     </section>
 
     <script src="js/bookmarks-buy-counter.js"></script>
