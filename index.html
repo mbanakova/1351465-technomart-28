@@ -290,9 +290,9 @@
           <input class="tab" type="radio" name="tab" id="tab-1" checked>
           <input class="tab" type="radio" name="tab" id="tab-2">
           <input class="tab" type="radio" name="tab" id="tab-3">
-          <label  class="tabs-item item1" for="tab-1">Доставка</label>
-          <label  class="tabs-item item2" for="tab-2">Гарантия</label>
-          <label  class="tabs-item item3" for="tab-3">Кредит</label>
+          <label  class="tabs-item item1" for="tab-1" tabindex="0">Доставка</label>
+          <label  class="tabs-item item2" for="tab-2" tabindex="1">Гарантия</label>
+          <label  class="tabs-item item3" for="tab-3" tabindex="2">Кредит</label>
 
           <div class="tab-content content1">
             <h3 class="tab-title">Доставка</h3>
@@ -467,7 +467,7 @@
             </p>
             </div>
 
-            <p>
+            <p class="pop-textarea">
               <label class="pop-label" for="pop-user-message">Текст письма:</label>
               <textarea class="pop-input pop-text-area" id="pop-user-message" name="user-message" placeholder="В свободной форме" required></textarea>
             </p>
