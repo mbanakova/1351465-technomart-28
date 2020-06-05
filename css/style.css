@@ -1124,7 +1124,7 @@ a {
     display: block;
 }
 
-/* Чекбокс наведение */
+/* Чекбокс, наведение */
 
 .filter-label-checkbox:hover::before {
     border-color: var(--radio-hover-grey);
@@ -1179,16 +1179,15 @@ a {
     display: block;
   }
 
-/* Радиобаттон наведение */
+/* Радиобаттон, наведение */
 
-  .filter-label-radio:hover::before {
+.filter-label-radio:hover::before {
     border-color: var(--radio-hover-grey);
 }
   
 .filter-label-radio:hover::after {
     background-color: var(--radio-hover-grey);
 }
-
 
 /* Радиобаттон, заблокирован */
 
