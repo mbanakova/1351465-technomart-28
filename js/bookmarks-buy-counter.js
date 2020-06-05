@@ -19,6 +19,7 @@ let cartTop = document.querySelector('.cart');
 
 let cartPop = document.querySelector('.in-cart');
 let closeCart = document.querySelector('.pop-close.pop-cart');
+let keepShopping = document.querySelector('.keep-shopping');
 
 
 for (buy of buys) {
@@ -36,3 +37,8 @@ closeCart.addEventListener('click', function (evt) {
     cartPop.classList.add('hide');
 });
 
+keepShopping.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    cartPop.classList.remove('appear');
+    cartPop.classList.add('hide');
+});
