@@ -32,6 +32,12 @@
     --special-buygreen: #367315;
     --special-buyclick: #518534;
     --button-hovergreen: #5fbb2d;
+    --logo-shadow: rgba(0, 0, 0, 0.24);
+    --feature-button: rgba(255, 255, 255, 0.3);
+    --feature-button-hover: rgba(255, 255, 255, 0.2);
+    --feature-button-active: rgba(255, 255, 255, 0.1);
+    --quater-shadow: rgba(0, 0, 0, 0.25);
+    --light-shadow: rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -87,7 +93,7 @@ a {
 .header-logo {
     position: relative;
     background-color: var(--basic-red);
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px -5px 0px var(--logo-shadow);
     padding: 0 57px 0 55px;
     height: 47px;
 }
@@ -150,7 +156,6 @@ a {
 
 .header-search:focus:hover {
     opacity: 1;
-    transition: 0.2s ease-in-out;
 }
 
 .header-links-wrap {
@@ -459,7 +464,7 @@ a {
     padding: 0px 25px 0 30px;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     background-color: var(--special-darkblue);
@@ -474,7 +479,6 @@ a {
 
 .nav-link:hover {
     background-color: var(--basic-darknavy);
-    transition: 0.2s ease-in-out;
 }
 
 .nav-link:active {
@@ -547,17 +551,16 @@ a {
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--feature-button);
     width: 135px;
 }
 
 .feature-item .button:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: 0.2s ease-in-out;
+    background-color: var(--feature-button-hover);
 }
 
 .feature-item .button:active {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--feature-button-active);
 }
 
 .materials {
@@ -837,12 +840,12 @@ a {
 }
 
 .popular-brand:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--quater-shadow);
     transition: 0.2s ease-in-out;
 }
 
 .popular-brand:active {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--light-shadow);
     opacity: 0.5;
 }
 
@@ -1269,12 +1272,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 220px;
+    width: 218px;
 }
 
 .range-input-1,
 .range-input-2 {
-    margin: 10px auto 0 auto;
+    padding: 0;
+    margin: 10px 0 0 0;
     width: 95px;
     height: 38px;
     background-color: var(--filter-beige);
@@ -1304,7 +1308,7 @@ a {
 
 .dash {
     display: block;
-    margin-top: 6px;
+    margin: 6px auto 0 auto;
 }
 .show-items {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -1499,13 +1503,12 @@ a {
 .popular-item:hover img,
 .catalog-list-item:hover img {
     display: none;
-    transition: 0.2s ease-in-out;
+
 }
 
 .popular-item:hover,
 .catalog-list-item:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-    transition: 0.2s ease-in-out;
+    box-shadow: 0px 4px 20px var(--light-shadow);
 }
 
 .popular-item,
@@ -1542,6 +1545,7 @@ a {
     margin-bottom: auto;
     max-width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 .card-bottom {
@@ -1887,7 +1891,7 @@ a {
     display: inline-block;
     vertical-align: middle;
     background-color: var(--basic-red);
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px -5px 0px var(--logo-shadow);
     padding: 20px 41px;
 }
 
@@ -2130,7 +2134,7 @@ a {
 }
 
 .pop {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--light-shadow);
     border-top: 7px solid var(--basic-red);
     position: relative;
     background-color: var(--white);
@@ -2305,8 +2309,14 @@ a {
 .large-map {
     padding: 0;
     margin: 0 auto;
-    width: 922px;
-    height: 426px;
+    width: 943px;
+    height: 442px;
+}
+
+.on-map {
+    border: none;
+    width: 943px;
+    height: 442px;
 }
 
 .pop-map {
