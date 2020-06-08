@@ -22,6 +22,7 @@
     --special-range-grey: #ababab;
     --pop-up-grey: #f4f4f4;
     --radio-hover-grey: #b5b5b5;
+    --range-ruler-grey: #d7dcde;
     --features-yellow: #ffbf47;
     --features-yellow-delivery: #ffc047;
     --footer-yellowlight: #ffd180;
@@ -118,6 +119,7 @@ a {
 
 .search:hover::before {
     opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .header-search {
@@ -148,6 +150,7 @@ a {
 
 .header-search:focus:hover {
     opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .header-links-wrap {
@@ -183,6 +186,7 @@ a {
 
 .bookmarks:hover::before {
     opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .bookmarks:active {
@@ -210,6 +214,7 @@ a {
 
 .cart:hover::before {
     opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .cart:active {
@@ -224,6 +229,7 @@ a {
 
 .make-order:hover {
     background-color: var(--button-hovergreen);
+    transition: 0.2s ease-in-out;
 }
 
 .make-order:active {
@@ -341,6 +347,7 @@ a {
 
 .auth-link.enter:hover {
     color: var(--basic-red);
+    transition: 0.2s ease-in-out;
 }
 
 .auth-link.enter:active {
@@ -348,7 +355,8 @@ a {
 }
 
 .auth-link.enter:hover .log-in {
-    fill: var(--basic-navy)
+    fill: var(--basic-navy);
+    transition: 0.2s ease-in-out;
 }
 
 .auth-link.enter:active .log-in {
@@ -361,6 +369,7 @@ a {
 
 .auth-link.register:hover {
     color: var(--basic-red);
+    transition: 0.2s ease-in-out;
 }
 
 .auth-link.register:active {
@@ -377,6 +386,7 @@ a {
 
 .guest:hover .ravshan {
     fill: var(--basic-navy);
+    transition: 0.2s ease-in-out;
 }
 
 .guest:active .ravshan {
@@ -385,6 +395,7 @@ a {
 
 .exit:hover .log-out {
     fill: var(--basic-navy);
+    transition: 0.2s ease-in-out;
 }
 
 .exit:active .log-out {
@@ -426,6 +437,7 @@ a {
 .header-user-profile:hover .user-profile,
 .header-user-profile:hover .spot {
     color: var(--basic-red);
+    transition: 0.2s ease-in-out;
 }
 
 .header-user-profile:active .user-profile, 
@@ -462,14 +474,16 @@ a {
 
 .nav-link:hover {
     background-color: var(--basic-darknavy);
+    transition: 0.2s ease-in-out;
 }
+
 .nav-link:active {
     background-color: var(--special-nav);
     opacity: 0.5;
 }
 
 
-                            /* Главная страница  */
+/*---------------------  Главная страница  */
 
 /* Особенности */
 
@@ -539,6 +553,7 @@ a {
 
 .feature-item .button:hover {
     background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-in-out;
 }
 
 .feature-item .button:active {
@@ -823,6 +838,7 @@ a {
 
 .popular-brand:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-in-out;
 }
 
 .popular-brand:active {
@@ -897,6 +913,7 @@ a {
 .tabs-item:hover {
     background-color: var(--basic-darknavy);
     box-shadow: 0px 1px 0px var(--basic-darknavy), inset 0px 1px 0px var(--tab-shadow-blue);
+    transition: 0.2s ease-in-out;
 }
 
 .tab-content {
@@ -1128,11 +1145,13 @@ a {
 
 .filter-label-checkbox:hover::before {
     border-color: var(--radio-hover-grey);
+    transition: 0.2s ease-in-out;
 }
   
 .filter-label-checkbox:hover::after {
     border-left-color: var(--radio-hover-grey);
     border-bottom-color: var(--radio-hover-grey);
+    transition: 0.2s ease-in-out;
 }
 
 /* Чекбокс, заблокирован */
@@ -1183,10 +1202,12 @@ a {
 
 .filter-label-radio:hover::before {
     border-color: var(--radio-hover-grey);
+    transition: 0.2s ease-in-out;
 }
   
 .filter-label-radio:hover::after {
     background-color: var(--radio-hover-grey);
+    transition: 0.2s ease-in-out;
 }
 
 /* Радиобаттон, заблокирован */
@@ -1272,6 +1293,12 @@ a {
     width: 178px;
     height: 2px;
     border-radius: 4px;
+    background-color: var(--special-range-grey);
+}
+
+.range-between {
+    width: 178px;
+    height: 2px;
     background-color: var(--basic-green);
 }
 
@@ -1294,6 +1321,7 @@ a {
 
 .show-items:hover {
     border: 1px solid var(--basic-red);
+    transition: 0.2s ease-in-out;
 }
 
 .show-items:active {
@@ -1369,11 +1397,13 @@ a {
     opacity: 1;
     color: var(--black);
     border-bottom: 1px solid var(--basic-red);
+    transition: 0.2s ease-in-out;
 }
 
 .sort-item-link.rank:hover {
     color: var(--black);
     opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .sort-items-list:first-of-type .sort-item:active {
@@ -1407,6 +1437,7 @@ a {
 
 .sort-item-link.up:hover {
     opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .sort-item-link.up:active {
@@ -1426,6 +1457,7 @@ a {
 
 .sort-item-link.down:hover {
     opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .sort-item-link.down:active {
@@ -1461,16 +1493,19 @@ a {
 .catalog-list-item:hover button {
     display: inline-block;
     vertical-align: middle;
+    transition: 0.2s ease-in-out;
 }
 
 .popular-item:hover img,
 .catalog-list-item:hover img {
     display: none;
+    transition: 0.2s ease-in-out;
 }
 
 .popular-item:hover,
 .catalog-list-item:hover {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease-in-out;
 }
 
 .popular-item,
@@ -1579,6 +1614,7 @@ a {
 .buy:hover {
     background-color: var(--button-hovergreen);
     border: 1px solid var(--button-hovergreen);
+    transition: 0.2s ease-in-out;
 }
 
 .buy:active {
@@ -1604,6 +1640,7 @@ a {
 
 .bookmark:hover {
     border: 3px solid var(--special-darkblue);
+    transition: 0.2s ease-in-out;
 }
 
 .bookmark:active {
@@ -1799,6 +1836,7 @@ a {
 
 .page:hover {
     border: 1px solid var(--basic-greylight);
+    transition: 0.2s ease-in-out;
 }
 
 .page:active {
@@ -1882,6 +1920,7 @@ a {
 
 .footer-nav-link:hover {
     text-decoration: underline;
+    transition: 0.2s ease-in-out;
 }
 
 .footer-nav-link:active {
@@ -1936,6 +1975,7 @@ a {
 
 .footer-catalog-link:hover {
     text-decoration: underline;
+    transition: 0.2s ease-in-out;
 }
 
 .footer-catalog-link:active {
@@ -1995,6 +2035,7 @@ a {
 
 .social-button:hover {
     background-color: var(--basic-red);
+    transition: 0.2s ease-in-out;
 }
 
 .social-button:active {
@@ -2036,6 +2077,7 @@ a {
 .footer-email:hover,
 .web-dev:hover {
     text-decoration: underline;
+    transition: 0.2s ease-in-out;
 }
 
 .footer-email:active,
@@ -2065,6 +2107,7 @@ a {
 .up-button:hover {
     border: 2px solid var(--special-dark);
     background-color: var(--dark-red);
+    transition: 0.2s ease-in-out;
 }
 
 .up-button:active {
@@ -2096,6 +2139,7 @@ a {
 .pop-up .submit:hover,
 .pop-up .submit:active {
     outline: none;
+    transition: 0.2s ease-in-out;
 }
 
 .pop-close {
@@ -2115,6 +2159,7 @@ a {
 
 .pop-close:hover {
     transform: scale(1.5);
+    transition: 0.2s ease-in-out;
 }
 
 .pop-close:active {
