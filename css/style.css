@@ -894,9 +894,16 @@ a {
     width: 940px;
     min-height: 186px;
     padding-bottom: 99px;
+}
+
+.service-tabs::before {
+    position: absolute;
+    content: "";
+    top: -43px;
+    left: 245px;
+    width: 10px;
+    height: 279px;
     background-image: url("../img/tab-shadow.png");
-    background-repeat: no-repeat;
-    background-position: 246px -40px;
 }
 
 .tab {
