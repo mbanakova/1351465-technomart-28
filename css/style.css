@@ -553,7 +553,7 @@ a {
     text-transform: uppercase;
     color: var(--white);
     background-color: var(--feature-button);
-    width: 135px;
+    max-width: 135px;
     padding: 10px 0;
 }
 
@@ -914,7 +914,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 240px;
-    height: 62px;
+    min-height: 62px;
     background-color: var(--special-darkblue);
     font-size: 21px;
     line-height: 30px;
@@ -922,7 +922,7 @@ a {
     color: var(--white);
     box-shadow: 0px 1px 0px var(--basic-darknavy), inset 0px 1px 0px var(--tab-shadow-blue);
     box-sizing: border-box;
-    padding: 14px 0 17px 22px;
+    padding: 14px 22px 17px 22px;
 }
 
 .tabs-item:hover {
@@ -1102,6 +1102,7 @@ a {
 .filter-brand-item,
 .filter-power-item {
     padding-bottom: 16px;
+    padding-right: 20px;
 }
 
 .filter-label-checkbox,
@@ -1624,7 +1625,7 @@ a {
     border-radius: 2px;
     box-sizing: border-box;
     width: 135px;
-    height: 38px;
+    min-height: 38px;
 }
 
 .buy:hover {
@@ -1651,7 +1652,7 @@ a {
     border-radius: 2px;
     box-sizing: border-box;
     width: 135px;
-    height: 38px;
+    min-height: 38px;
 }
 
 .bookmark:hover {
