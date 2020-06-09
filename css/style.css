@@ -141,6 +141,14 @@ a {
     padding: 0 0 0 41px;
 }
 
+.header-search::-webkit-input-placeholder {
+    color: var(--white);
+}
+
+.header-search::-moz-placeholder {
+    color: var(--white);
+}
+
 .header-search::placeholder {
     color: var(--white);
 }
@@ -465,7 +473,7 @@ a {
     padding: 0px 25px 0 30px;
     list-style: none;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: var(--special-darkblue);
@@ -1558,7 +1566,8 @@ a {
     margin-bottom: auto;
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .card-bottom {
