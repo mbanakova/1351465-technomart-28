@@ -33,12 +33,19 @@ for (buy of buys) {
 
 closeCart.addEventListener('click', function (evt) {
     evt.preventDefault();
-    cartPop.classList.remove('appear');
-    cartPop.classList.add('hide');
+    cartPop.classList.toggle('hide');
 });
 
 keepShopping.addEventListener('click', function (evt) {
     evt.preventDefault();
-    cartPop.classList.remove('appear');
-    cartPop.classList.add('hide');
+    cartPop.classList.toggle('hide');
 });
+
+window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      if (!cartPop.classList.contains('hide')) {
+        evt.preventDefault();
+        cartPop.classList.add('hide');
+      }
+    }
+  });
