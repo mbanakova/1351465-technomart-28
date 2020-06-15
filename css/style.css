@@ -764,7 +764,7 @@ a {
     transform: translate(0);
 }
   
-  #btn-2:checked ~ .slider-inner .slider-slides {
+#btn-2:checked ~ .slider-inner .slider-slides {
     transform: translate(-620px);
 }
 
@@ -1437,7 +1437,7 @@ a {
 }
 
 .sort-item-link.rank:active {
-    color: #ee3643;
+    color: var(--basic-red);
     opacity: 1;
 }
 
