@@ -1,0 +1,1 @@
+var upButton=document.querySelector(".up-button");window.onscroll=function(){260<window.pageYOffset?upButton.classList.add("shown"):upButton.classList.remove("shown")},upButton.onclick=function(){window.scrollTo(0,0)};

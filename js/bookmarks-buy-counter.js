@@ -1,10 +1,10 @@
-let bookmarks = document.querySelectorAll('.bookmark');
-let bookmarkNumber = document.querySelector('.bookmark-clicks');
-let bookmarkCounter = 0;
-let bookmarkTop = document.querySelector('.bookmarks');
+var bookmarks = document.querySelectorAll('.bookmark');
+var bookmarkNumber = document.querySelector('.bookmark-clicks');
+var bookmarkCounter = 0;
+var bookmarkTop = document.querySelector('.bookmarks');
 
 
-for (bookmark of bookmarks) {
+for (var bookmark of bookmarks) {
     bookmark.onclick = function () {
     bookmarkCounter++;
     bookmarkNumber.textContent = bookmarkCounter;
@@ -12,17 +12,17 @@ for (bookmark of bookmarks) {
 }
 }
 
-let buys = document.querySelectorAll('.buy');
-let buyNumber = document.querySelector('.buy-clicks');
-let buyCounter = 0;
-let cartTop = document.querySelector('.cart');
+var buys = document.querySelectorAll('.buy');
+var buyNumber = document.querySelector('.buy-clicks');
+var buyCounter = 0;
+var cartTop = document.querySelector('.cart');
 
-let cartPop = document.querySelector('.in-cart');
-let closeCart = document.querySelector('.pop-close.pop-cart');
-let keepShopping = document.querySelector('.keep-shopping');
+var cartPop = document.querySelector('.in-cart');
+var closeCart = document.querySelector('.pop-close.pop-cart');
+var keepShopping = document.querySelector('.keep-shopping');
 
 
-for (buy of buys) {
+for (var buy of buys) {
     buy.onclick = function () {
     buyCounter++;
     buyNumber.textContent = buyCounter;

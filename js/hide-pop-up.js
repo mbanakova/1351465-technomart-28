@@ -1,6 +1,6 @@
-let smallMap = document.querySelector('.small-map');
-let largeMap = document.querySelector('.large-map');
-let closeMap = document.querySelector('.pop-close.map');
+var smallMap = document.querySelector('.small-map');
+var largeMap = document.querySelector('.large-map');
+var closeMap = document.querySelector('.pop-close.map');
 
 
 smallMap.addEventListener('click', function (evt) {
@@ -25,17 +25,17 @@ window.addEventListener('keydown', function (evt) {
   });
 
 
-let feedbackForm = document.querySelector('.feedback-form');
-let sendMail = document.querySelector('.mail');
-let closeMail = document.querySelector('.pop-close.no-mail');
-let userName = document.querySelector('#pop-user-name');
-let userEmail = document.querySelector('#pop-user-email');
-let message = document.querySelector('#pop-user-message');
-let form = document.querySelector('.write-us');
+var feedbackForm = document.querySelector('.feedback-form');
+var sendMail = document.querySelector('.mail');
+var closeMail = document.querySelector('.pop-close.no-mail');
+var userName = document.querySelector('#pop-user-name');
+var userEmail = document.querySelector('#pop-user-email');
+var message = document.querySelector('#pop-user-message');
+var form = document.querySelector('.write-us');
 
-let isStorageSupport = true;
-let storageName = '';
-let storageEmail = '';
+var isStorageSupport = true;
+var storageName = '';
+var storageEmail = '';
 
 try {
     storageName = localStorage.getItem('user');
