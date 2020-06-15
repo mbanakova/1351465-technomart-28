@@ -694,9 +694,12 @@ a {
 }
 
 .slider-arrows .arrow-left {
+    padding: 0;
     display: block;
     min-width: 22px;
     min-height: 40px;
+    border: none;
+    background-color: transparent;
     background-image: url("../img/icon-left.svg");
     background-repeat: no-repeat;
     cursor: pointer;
@@ -704,9 +707,12 @@ a {
 }
 
 .slider-arrows .arrow-right {
+    padding: 0;
     display: block;
     min-width: 22px;
     min-height: 40px;
+    border: none;
+    background-color: transparent;
     background-image: url("../img/icon-right.svg");
     background-repeat: no-repeat;
     cursor: pointer;

@@ -21,7 +21,8 @@
             <img class="logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">
           </a>
           <form class="search" action="#" method="post">
-            <input class="header-search" type="search" placeholder="Поиск:">
+            <label class="visually-hidden" for="header-search">Поиск</label>
+            <input class="header-search" type="search" id="header-search" placeholder="Поиск:">
           </form>
 
           <div class="header-links-wrap">
@@ -135,8 +136,8 @@
             </div>
 
             <div class="slider-arrows">
-              <label class="toggle arrow-left" for="btn-1" tabindex="0"></label>
-              <label class="toggle arrow-right" for="btn-2" tabindex="0"></label>
+              <button class="toggle arrow-left" type="button"></button>
+              <button class="toggle arrow-right" type="button"></button>
             </div>
 
             <div class="slider-inner">
@@ -511,5 +512,6 @@
     <script src="js/bookmarks-buy-counter.js"></script>
     <script src="js/page-up.js"></script>
     <script src="js/hide-pop-up.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

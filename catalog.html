@@ -21,7 +21,8 @@
               <img class="logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">
             </a>
             <form class="search" action="#" method="post">
-              <input class="header-search" type="search" placeholder="Поиск:">
+              <label class="visually-hidden" for="header-search">Поиск</label>
+              <input class="header-search" type="search" id="header-search" placeholder="Поиск:">
             </form>
             <div class="header-links-wrap">
               <a class="button bookmarks" href="#">Закладки: <span class="bookmark-clicks">0</span></a>
@@ -116,8 +117,10 @@
                       </div>
 
                       <div class="range-cells">
+                        <label class="visually-hidden" for="range-left-cell">От</label>
                         <input class="range-input-1" type="number" name="min-price" min="0" max="30000" id="range-left-cell">
                         <span class="dash">—</span>
+                        <label class="visually-hidden" for="range-right-cell">До</label>
                         <input class="range-input-2" type="number" name="max-price" min="0" max="30000" id="range-right-cell">
                       </div>
                     </fieldset>
